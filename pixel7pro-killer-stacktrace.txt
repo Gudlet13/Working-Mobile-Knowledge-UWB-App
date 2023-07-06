@@ -1,0 +1,489 @@
+2023-07-06 15:08:36.128   830-830   qorvo.uwb.uwbmac        android.hardware.qorvo.uwb.service   I  report_nl_cb
+2023-07-06 15:08:36.130 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: session notification callback.
+2023-07-06 15:08:36.130 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: find local class com/android/server/uwb/data/UwbTwoWayMeasurement
+2023-07-06 15:08:36.130 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: find local class com/android/server/uwb/data/UwbRangingData
+2023-07-06 15:08:36.130 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: callback onRangeDataNotificationReceived
+2023-07-06 15:08:36.130 21795-22858 NativeUwbManager        system_server                        D  onRangeDataNotificationReceived : UwbRangingData {  SeqCounter = 383, SessionId = 2726812175, RcrIndication = 0, CurrRangingInterval = 240, RangingMeasuresType = 1, MacAddressMode = 0, NoOfRangingMeasures = 1, RangingTwoWayMeasures = [UwbTwoWayMeasurement {  MacAddress = E8A4, RangingStatus = 0, NLoS = 0, Distance = 96, AoaAzimuth = 74.94531, AoaAzimuthFom = 84, AoaElevation = 28.5625, AoaElevationFom = 84, AoaDestAzimuth = 0.0, AoaDestAzimuthFom = 0, AoaDestElevation = 0.0, AoaDestElevationFom = 0, SlotIndex = 0x00000000, RSSI = -88}], RawNotificationData = [98, 0, 0, 56, 0, 0, 0, 127, 1, 0, 0, 15, -38, -121, -94, 0, -16, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -24, -92, 0, 0, 96, 0, 121, 37, 84, 72, 14, 84, 0, 0, 0, 0, 0, 0, 0, -80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+2023-07-06 15:08:36.132 21795-22858 UwbSessionNotiManager   system_server                        I  IUwbRangingCallbacks - onRangingResult
+2023-07-06 15:08:36.133 22675-27863 Uwb.Rangin...n@82b648b] com.google.android.gms.persistent    V  onRangingResult - sessionHandle: SessionHandle [id=1, package-name: com.google.android.gms, uid: 10159, pid: 22675]
+2023-07-06 15:08:36.134 22675-22724 NearbyUWB               com.google.android.gms.persistent    I  (REDACTED) Ranging Result: %s %s
+2023-07-06 15:08:36.194   838-838   WifiHAL                 ven...e.wifi_ext@1.0-service-vendor  I  Creating message to get link statistics; iface = 47
+2023-07-06 15:08:36.240 27710-27710 System.out              com...mobileknowledge.uwbconnectapp  I  [2023/07/06 13:08:36.240][DistanceAlert][UWB_RANGING_RESULT][MK UWB SR150 Anchor][00:60:37:41:8A:AF][96][74][28]
+2023-07-06 15:08:36.300   838-838   WifiHAL                 ven...e.wifi_ext@1.0-service-vendor  I  In GetLinkStatsCommand::handleResponse
+2023-07-06 15:08:36.337 21795-21943 ConnectivityService     system_server                        D  NetReassign [no changes] [c 1] [a 0] [i 4]
+2023-07-06 15:08:36.368   830-830   qorvo.uwb.uwbmac        android.hardware.qorvo.uwb.service   I  report_nl_cb
+2023-07-06 15:08:36.369 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: session notification callback.
+2023-07-06 15:08:36.369 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: find local class com/android/server/uwb/data/UwbTwoWayMeasurement
+2023-07-06 15:08:36.369 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: find local class com/android/server/uwb/data/UwbRangingData
+2023-07-06 15:08:36.369 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: callback onRangeDataNotificationReceived
+2023-07-06 15:08:36.369 21795-22858 NativeUwbManager        system_server                        D  onRangeDataNotificationReceived : UwbRangingData {  SeqCounter = 384, SessionId = 2726812175, RcrIndication = 0, CurrRangingInterval = 240, RangingMeasuresType = 1, MacAddressMode = 0, NoOfRangingMeasures = 1, RangingTwoWayMeasures = [UwbTwoWayMeasurement {  MacAddress = E8A4, RangingStatus = 0, NLoS = 0, Distance = 100, AoaAzimuth = 74.94531, AoaAzimuthFom = 84, AoaElevation = 13.453125, AoaElevationFom = 84, AoaDestAzimuth = 0.0, AoaDestAzimuthFom = 0, AoaDestElevation = 0.0, AoaDestElevationFom = 0, SlotIndex = 0x00000000, RSSI = -88}], RawNotificationData = [98, 0, 0, 56, 0, 0, 0, -128, 1, 0, 0, 15, -38, -121, -94, 0, -16, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -24, -92, 0, 0, 100, 0, 121, 37, 84, -70, 6, 84, 0, 0, 0, 0, 0, 0, 0, -80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+2023-07-06 15:08:36.370 21795-22858 UwbSessionNotiManager   system_server                        I  IUwbRangingCallbacks - onRangingResult
+2023-07-06 15:08:36.371 22675-27863 Uwb.Rangin...n@82b648b] com.google.android.gms.persistent    V  onRangingResult - sessionHandle: SessionHandle [id=1, package-name: com.google.android.gms, uid: 10159, pid: 22675]
+2023-07-06 15:08:36.372 22675-23982 NearbyUWB               com.google.android.gms.persistent    I  (REDACTED) Ranging Result: %s %s
+2023-07-06 15:08:36.478 27710-27710 System.out              com...mobileknowledge.uwbconnectapp  I  [2023/07/06 13:08:36.478][DistanceAlert][UWB_RANGING_RESULT][MK UWB SR150 Anchor][00:60:37:41:8A:AF][100][74][13]
+2023-07-06 15:08:36.607   830-830   qorvo.uwb.uwbmac        android.hardware.qorvo.uwb.service   I  report_nl_cb
+2023-07-06 15:08:36.608 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: session notification callback.
+2023-07-06 15:08:36.609 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: find local class com/android/server/uwb/data/UwbTwoWayMeasurement
+2023-07-06 15:08:36.609 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: find local class com/android/server/uwb/data/UwbRangingData
+2023-07-06 15:08:36.609 21795-22858 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: callback onRangeDataNotificationReceived
+2023-07-06 15:08:36.609 21795-22858 NativeUwbManager        system_server                        D  onRangeDataNotificationReceived : UwbRangingData {  SeqCounter = 385, SessionId = 2726812175, RcrIndication = 0, CurrRangingInterval = 240, RangingMeasuresType = 1, MacAddressMode = 0, NoOfRangingMeasures = 1, RangingTwoWayMeasures = [UwbTwoWayMeasurement {  MacAddress = E8A4, RangingStatus = 0, NLoS = 0, Distance = 99, AoaAzimuth = 74.94531, AoaAzimuthFom = 84, AoaElevation = 13.6796875, AoaElevationFom = 88, AoaDestAzimuth = 0.0, AoaDestAzimuthFom = 0, AoaDestElevation = 0.0, AoaDestElevationFom = 0, SlotIndex = 0x00000000, RSSI = -88}], RawNotificationData = [98, 0, 0, 56, 0, 0, 0, -127, 1, 0, 0, 15, -38, -121, -94, 0, -16, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, -24, -92, 0, 0, 99, 0, 121, 37, 84, -41, 6, 88, 0, 0, 0, 0, 0, 0, 0, -80, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]}
+2023-07-06 15:08:36.611 21795-22858 UwbSessionNotiManager   system_server                        I  IUwbRangingCallbacks - onRangingResult
+2023-07-06 15:08:36.611 22675-27863 Uwb.Rangin...n@82b648b] com.google.android.gms.persistent    V  onRangingResult - sessionHandle: SessionHandle [id=1, package-name: com.google.android.gms, uid: 10159, pid: 22675]
+2023-07-06 15:08:36.613 22675-22724 NearbyUWB               com.google.android.gms.persistent    I  (REDACTED) Ranging Result: %s %s
+2023-07-06 15:08:36.659 21795-23546 ActivityManager         system_server                        I  Force stopping com.themobileknowledge.uwbconnectapp appid=10258 user=0: from pid 27966
+2023-07-06 15:08:36.660 21795-23546 ActivityManager         system_server                        I  Killing 27710:com.themobileknowledge.uwbconnectapp/u0a258 (adj 0): stop com.themobileknowledge.uwbconnectapp due to from pid 27966
+2023-07-06 15:08:36.661 21795-21993 UwbSessionManager       system_server                        I  App state change. IsFg: false. Reconfiguring session ntf control
+2023-07-06 15:08:36.662 21795-21993 UwbSessionManager       system_server                        I  reconfigure() - Session ID : -1568155121
+2023-07-06 15:08:36.662 21795-21993 UwbSessionManager       system_server                        I  reconfigure() - update reconfigure params: com.android.x.uwb.com.google.uwb.support.fira.FiraRangingReconfigureParams@6187cb8
+2023-07-06 15:08:36.662   635-635   powerhal-libperfmgr     and...ower-service.pixel-libperfmgr  W  sched_setattr failed for thread 27740, err=3
+2023-07-06 15:08:36.663   635-635   libprocessgroup         and...ower-service.pixel-libperfmgr  W  Failed to apply NoResetUclampGrp task profile: No such process
+2023-07-06 15:08:36.663   635-635   powerhal-libperfmgr     and...ower-service.pixel-libperfmgr  W  Failed to set NoResetUclampGrp task profile for tid:27753
+2023-07-06 15:08:36.663   635-635   libprocessgroup         and...ower-service.pixel-libperfmgr  W  Failed to apply NoResetUclampGrp task profile: No such process
+2023-07-06 15:08:36.663   635-635   powerhal-libperfmgr     and...ower-service.pixel-libperfmgr  W  Failed to set NoResetUclampGrp task profile for tid:27754
+2023-07-06 15:08:36.663   635-635   libprocessgroup         and...ower-service.pixel-libperfmgr  W  Failed to apply NoResetUclampGrp task profile: No such process
+2023-07-06 15:08:36.663   635-635   powerhal-libperfmgr     and...ower-service.pixel-libperfmgr  W  Failed to set NoResetUclampGrp task profile for tid:27740
+2023-07-06 15:08:36.663   635-635   powerhal-libperfmgr     and...ower-service.pixel-libperfmgr  W  sched_setattr failed for thread 27753, err=3
+2023-07-06 15:08:36.663   635-635   powerhal-libperfmgr     and...ower-service.pixel-libperfmgr  W  sched_setattr failed for thread 27754, err=3
+--------- beginning of crash
+2023-07-06 15:08:36.663   635-635   powerhal-libperfmgr     and...ower-service.pixel-libperfmgr  W  sched_setattr failed for thread 27740, err=3
+2023-07-06 15:08:36.663 21795-21993 AndroidRuntime          system_server                        E  *** FATAL EXCEPTION IN SYSTEM PROCESS: UwbService
+                                                                                                    java.lang.IllegalArgumentException
+                                                                                                    	at com.android.x.uwb.com.google.common.base.Preconditions.checkArgument(Unknown Source:5)
+                                                                                                    	at com.android.x.uwb.com.google.uwb.support.fira.FiraOpenSessionParams$Builder.checkRangeDataNtfConfig(Unknown Source:71)
+                                                                                                    	at com.android.x.uwb.com.google.uwb.support.fira.FiraOpenSessionParams$Builder.build(Unknown Source:11)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager$UwbSession.updateFiraParamsOnReconfigure(Unknown Source:145)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager.reconfigureInternal(Unknown Source:93)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager.-$$Nest$mreconfigureInternal(Unknown Source:0)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager$UwbSession.reconfigureFiraSessionOnFgStateChange(Unknown Source:48)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager$1.lambda$onUidImportance$0(Unknown Source:83)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager$1.$r8$lambda$BbVl9Tj34jkESeK6LicC5SCPxMg(Unknown Source:0)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager$1$$ExternalSyntheticLambda0.run(Unknown Source:6)
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:942)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201)
+                                                                                                    	at android.os.Looper.loop(Looper.java:288)
+                                                                                                    	at android.os.HandlerThread.run(HandlerThread.java:67)
+2023-07-06 15:08:36.665 21795-23546 ActivityTaskManager     system_server                        W  Force removing ActivityRecord{cf28d8c u0 com.themobileknowledge.uwbconnectapp/.screens.distancealert.DistanceAlertActivity} t460 f}}: app died, no saved state
+2023-07-06 15:08:36.665 21795-21827 libprocessgroup         system_server                        I  Successfully killed process cgroup uid 10258 pid 27710 in 0ms
+2023-07-06 15:08:36.666 22675-22675 BoundBrokerSvc          com.google.android.gms.persistent    D  onUnbind: Intent { act=com.google.android.gms.nearby.uwb.service.START dat=chimera-action:/... cmp=com.google.android.gms/.chimera.PersistentApiServiceNoInstantApps }
+2023-07-06 15:08:36.671 21795-23546 InputManager-JNI        system_server                        W  Input channel object 'cf7d49a com.themobileknowledge.uwbconnectapp/com.themobileknowledge.uwbconnectapp.screens.distancealert.DistanceAlertActivity (client)' was disposed without first being removed with the input manager!
+2023-07-06 15:08:36.674 21795-23546 ActivityTaskManager     system_server                        W  Force removing ActivityRecord{8b568fc u0 com.themobileknowledge.uwbconnectapp/.screens.selectdemo.SelectDemoActivity} t460 f}}: app died, no saved state
+2023-07-06 15:08:36.674 21795-23546 InputManager-JNI        system_server                        W  Input channel object '60c2e32 com.themobileknowledge.uwbconnectapp/com.themobileknowledge.uwbconnectapp.screens.selectdemo.SelectDemoActivity (client)' was disposed without first being removed with the input manager!
+2023-07-06 15:08:36.684 22453-22496 QuickstepModelDelegate  com...le.android.apps.nexuslauncher  D  notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+2023-07-06 15:08:36.684 21795-21813 WindowManager           system_server                        V  Unknown focus tokens, dropping reportFocusChanged
+2023-07-06 15:08:36.685 21795-23546 OomAdjuster             system_server                        D  Not killing cached processes
+2023-07-06 15:08:36.685 22453-23058 OneSearchS...stProvider com...le.android.apps.nexuslauncher  E  Failed to fetch suggestions from AppSearch, fallback to AGA
+                                                                                                    java.util.concurrent.CompletionException: java.util.NoSuchElementException: No value present
+                                                                                                    	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:307)
+                                                                                                    	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:322)
+                                                                                                    	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:680)
+                                                                                                    	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:482)
+                                                                                                    	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2064)
+                                                                                                    	at com.google.android.apps.nexuslauncher.allapps.K.onResult(Unknown Source:59)
+                                                                                                    	at android.app.appsearch.SearchSessionUtil$1.lambda$onResult$0(SearchSessionUtil.java:128)
+                                                                                                    	at android.app.appsearch.SearchSessionUtil$1.$r8$lambda$_nlk9WiPjSfaAsqKYmp0aPvSRC0(Unknown Source:0)
+                                                                                                    	at android.app.appsearch.AppSearchSession$4$$ExternalSyntheticLambda1.run(Unknown Source:26)
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:942)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201)
+                                                                                                    	at android.os.Looper.loop(Looper.java:288)
+                                                                                                    	at android.os.HandlerThread.run(HandlerThread.java:67)
+                                                                                                    Caused by: java.util.NoSuchElementException: No value present
+                                                                                                    	at java.util.Optional.get(Optional.java:144)
+                                                                                                    	at com.google.android.apps.nexuslauncher.allapps.K.onResult(Unknown Source:16)
+                                                                                                    	at android.app.appsearch.SearchSessionUtil$1.lambda$onResult$0(SearchSessionUtil.java:128) 
+                                                                                                    	at android.app.appsearch.SearchSessionUtil$1.$r8$lambda$_nlk9WiPjSfaAsqKYmp0aPvSRC0(Unknown Source:0) 
+                                                                                                    	at android.app.appsearch.AppSearchSession$4$$ExternalSyntheticLambda1.run(Unknown Source:26) 
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:942) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99) 
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:288) 
+                                                                                                    	at android.os.HandlerThread.run(HandlerThread.java:67) 
+2023-07-06 15:08:36.685 21795-21824 UsageStatsService       system_server                        W  Unexpected activity event reported! (com.themobileknowledge.uwbconnectapp/com.themobileknowledge.uwbconnectapp.screens.selectdemo.SelectDemoActivity event : 23 instanceId : 159737327)
+2023-07-06 15:08:36.685 22453-23058 OneSearchS...stProvider com...le.android.apps.nexuslauncher  D  Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=9, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@8d83834
+---------------------------- PROCESS ENDED (27710) for package com.themobileknowledge.uwbconnectapp ----------------------------
+2023-07-06 15:08:36.687   471-593   display                 and...e.composer.hwc3-service.pixel  D  setActiveConfigWithConstraints:: PrimaryDisplay config(37) test(0)
+2023-07-06 15:08:36.695 22900-23401 AiAiEcho                com.google.android.as                I  Predicting[7]: { Feature:1, creation:2023-07-06T09:19:21Z, expiry:2023-07-06T10:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-06T10:00:00Z, expiry:2023-07-06T11:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-06T11:00:00Z, expiry:2023-07-06T12:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-06T12:00:00Z, expiry:2023-07-06T13:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-06T13:00:00Z, expiry:2023-07-06T14:00:00Z, isExpired: false}, { Feature:1, creation:2023-07-06T14:00:00Z, expiry:2023-07-06T15:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-06T15:00:00Z, expiry:2023-07-06T15:19:21Z, isExpired: true}
+2023-07-06 15:08:36.696 22900-23401 AiAiEcho                com.google.android.as                I  EchoTargets: Feature:1
+                                                                                                    Filtered by AiAi flag check: 
+2023-07-06 15:08:36.696 22900-23401 AiAiEcho                com.google.android.as                I  Ranked targets strategy: WEIGHTED, count: 1, ranking metadata: { cardId: WEATHER-569377247, card type: 1, update time: 2023-07-06T13:00:00Z, expiration time: 2023-07-06T14:00:00Z, ranking metadata: RankingMetaData(urgency=0.981, priority=0.3, recency=1.0, rankScore=0.29430002, importantTimePoints=# ntz@7bca4) }
+2023-07-06 15:08:36.697 22900-23401 AiAiEcho                com.google.android.as                I  #weatherTwiddler: Weather removes SubtitleSupplementalItem in surface: home
+2023-07-06 15:08:36.699 22900-23401 AiAiEcho                com.google.android.as                I  #postPredictionTargets: Sending updates to UISurface home with targets# 1 (types=[1])
+2023-07-06 15:08:36.700 22453-22453 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  No text view can be set up
+2023-07-06 15:08:36.700 22332-22332 CarrierSvcBindHelper    com.android.phone                    D  onHandleForceStop: [com.themobileknowledge.uwbconnectapp]
+2023-07-06 15:08:36.700 22453-22453 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  Passed-in item info is null
+2023-07-06 15:08:36.701 22332-22332 CarrierSvcBindHelper    com.android.phone                    D  No carrier app for: 0
+2023-07-06 15:08:36.701 22453-22453 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  Passed-in item info is null
+2023-07-06 15:08:36.701 22453-22453 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  I  Secondary card pane is null
+2023-07-06 15:08:36.703 23343-23343 A                       com...d.googlequicksearchbox:search  I  onStart
+2023-07-06 15:08:36.704 22332-22332 CarrierSvcBindHelper    com.android.phone                    D  No carrier app for: 1
+2023-07-06 15:08:36.705 21795-23546 Compatibil...geReporter system_server                        D  Compat change id reported: 202110963; UID 1001; state: ENABLED
+2023-07-06 15:08:36.706 23099-23099 Registered...vicesCache com.android.nfc                      D  Service unchanged, not updating
+2023-07-06 15:08:36.707 21795-21813 DisplayDeviceRepository system_server                        I  Display device changed: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:4619827677550801152", 1080 x 2340, modeId 3, defaultModeId 3, supportedModes [{id=1, width=1440, height=3120, fps=60.0, alternativeRefreshRates=[120.00001]}, {id=2, width=1440, height=3120, fps=120.00001, alternativeRefreshRates=[60.0]}, {id=3, width=1080, height=2340, fps=120.00001, alternativeRefreshRates=[60.0]}, {id=4, width=1080, height=2340, fps=60.0, alternativeRefreshRates=[120.00001]}], colorMode 0, supportedColorModes [0, 7, 9], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[2, 3, 4], mMaxLuminance=1000.0, mMaxAverageLuminance=120.0, mMinLuminance=5.0E-4}, allmSupported false, gameContentTypeSupported false, density 420, 386.366 x 383.458 dpi, appVsyncOff 6233332, presDeadline 11500000, cutout DisplayCutout{insets=Rect(0, 108 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(490, 0 - 599, 108), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1440 physicalDisplayHeight=3120 density={3.5} cutoutSpec={M 677,72 a 43,43 0 1 0 86,0 a 43,43 0 1 0 -86,0 Z @left} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={0.75}}}}, touch INTERNAL, rotation 0, type INTERNAL, address {port=0, model=0x401ceccbbbeef1}, deviceProductInfo DeviceProductInfo{name=Common Panel, manufacturerPnpId=GGL, productId=0, modelYear=null, manufactureDate=ManufactureDate{week=1, year=1990}, connectionToSinkType=0}, state ON, committedState ON, frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.17429718, roundedCorners RoundedCorners{[RoundedCorner{position=TopLeft, radius=38, center=Point(38, 38)}, RoundedCorner{position=TopRight, radius=38, center=Point(1042, 38)}, RoundedCorner{position=BottomRight, radius=37, center=Point(1043, 2303)}, RoundedCorner{position=BottomLeft, radius=37, center=Point(37, 2303)}]}, FLAG_ALLOWED_TO_BE_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, installOrientation 0}
+2023-07-06 15:08:36.708 22226-25453 SecureElementService    com.android.se                       D  getReaders() for com.android.nfc
+2023-07-06 15:08:36.709 23343-23343 A                       com...d.googlequicksearchbox:search  I  onResume
+2023-07-06 15:08:36.709 21795-24110 Compatibil...geReporter system_server                        D  Compat change id reported: 161252188; UID 10147; state: DISABLED
+2023-07-06 15:08:36.715 22226-25453 SecureElem...minal-SIM2 com.android.se                       I  isNfcEventAllowed: No access rules for checking.
+2023-07-06 15:08:36.717 21795-23006 InputMetho...gerService system_server                        W  Got RemoteException sending setActive(false) notification to pid 27710 uid 10258
+2023-07-06 15:08:36.718 22768-22768 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.onFinishInput():3306 
+2023-07-06 15:08:36.720 22768-22768 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+2023-07-06 15:08:36.722 22921-22921 GsaVoiceInteractionSrv  com...oglequicksearchbox:interactor  I  Handling ACTION_START_HOTWORD
+2023-07-06 15:08:36.722 23343-23343 A                       com...d.googlequicksearchbox:search  I  (REDACTED) Created gRPC endpoint for service %s
+2023-07-06 15:08:36.722 22921-23370 GsaVoiceInteractionSrv  com...oglequicksearchbox:interactor  I  (REDACTED) disregardHotwordSetting: %b
+2023-07-06 15:08:36.722 22921-23370 GsaVoiceInteractionSrv  com...oglequicksearchbox:interactor  I  Cannot start hotword, hotword is not available.
+2023-07-06 15:08:36.723 22768-22768 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+2023-07-06 15:08:36.724 22768-22768 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+2023-07-06 15:08:36.725 22768-22768 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+2023-07-06 15:08:36.728 22675-22688 NearbyUWB               com.google.android.gms.persistent    I  (REDACTED) Client %s (%s) disconnecting %s
+2023-07-06 15:08:36.729   463-463   BpTransact...edListener surfaceflinger                       E  Failed to transact (-32)
+2023-07-06 15:08:36.730 21687-21687 Zygote                  zygote64                             I  Process 27710 exited due to signal 9 (Killed)
+2023-07-06 15:08:36.730 22675-23982 NearbyUWB               com.google.android.gms.persistent    I  stop ranging called. [CONTEXT service_id=49 ]
+2023-07-06 15:08:36.733 22110-22847 bluetooth               com.google.android.bluetooth         I  packages/modules/Bluetooth/system/stack/gatt/gatt_api.cc:1411 GATT_Disconnect: conn_id=6
+2023-07-06 15:08:36.733 22110-22847 bluetooth               com.google.android.bluetooth         I  packages/modules/Bluetooth/system/stack/gatt/gatt_main.cc:337 gatt_update_app_hold_link_status: removed gatt_if=6
+2023-07-06 15:08:36.733 22110-22847 bluetooth               com.google.android.bluetooth         I  packages/modules/Bluetooth/system/stack/eatt/eatt_impl.h:899 disconnect:  Device: 00:60:37:41:8a:af, cid: 0xffff
+2023-07-06 15:08:36.733 22110-22847 bt_stack                com.google.android.bluetooth         W  [WARNING:eatt_impl.h(903)] disconnect no eatt device found
+2023-07-06 15:08:36.733 22110-22847 bluetooth               com.google.android.bluetooth         I  packages/modules/Bluetooth/system/stack/gatt/gatt_main.cc:401 gatt_update_app_use_link_flag: GATT fixed channel is no longer useful, start link idle timer for 1 seconds
+2023-07-06 15:08:36.733 22110-22847 bluetooth               com.google.android.bluetooth         I  packages/modules/Bluetooth/system/stack/gatt/gatt_api.cc:1074 GATT_SetIdleTimeout: idle_timeout=1, is_active=0, status=1 (1-OK 0-not performed)
+2023-07-06 15:08:36.733 22110-22847 bt_stack                com.google.android.bluetooth         I  [INFO:gatt_api.cc(1147)] GATT_Deregister gatt_if=6
+2023-07-06 15:08:36.733 22110-22847 bluetooth               com.google.android.bluetooth         W  packages/modules/Bluetooth/system/stack/gatt/gatt_main.cc:333 gatt_update_app_hold_link_status: attempt to remove non-existing gatt_if=6
+2023-07-06 15:08:36.733 22110-22847 bluetooth               com.google.android.bluetooth         I  packages/modules/Bluetooth/system/stack/gatt/gatt_main.cc:365 gatt_update_app_use_link_flag: App status is not updated for gatt_if=6
+2023-07-06 15:08:36.733 21795-24114 ActivityManager         system_server                        V  Got obituary of 27710:com.themobileknowledge.uwbconnectapp
+2023-07-06 15:08:36.733 21795-21813 ActivityManager         system_server                        W  setHasOverlayUi called on unknown pid: 27710
+2023-07-06 15:08:36.735 22110-22378 BtGatt.ContextMap       com.google.android.bluetooth         E  Context not found for ID 6
+2023-07-06 15:08:36.735 22110-22378 BtGatt.GattService      com.google.android.bluetooth         D  onDisconnected() - removing permit for address=00:60:37:41:8A:AF
+2023-07-06 15:08:36.736 22110-27601 ActivityAt...ionService com.google.android.bluetooth         D  notifyActivityAttributionInfo UID=1002 packageName=com.google.android.bluetooth deviceAddress=no_active_device_address
+2023-07-06 15:08:36.736 22110-27601 bt_btif                 com.google.android.bluetooth         I  packages/modules/Bluetooth/system/btif/src/bluetooth.cc:465 get_profile_interface: get_profile_interface: id = activity_attribution
+2023-07-06 15:08:36.736 22110-22445 bt_stack                com.google.android.bluetooth         I  [INFO:le_scanning_manager.cc(174)] ScanFilterParamSetup in shim layer
+2023-07-06 15:08:36.736 22675-22724 NearbyUWB               com.google.android.gms.persistent    I  (REDACTED) User opted in for analytics reporting: %s.
+2023-07-06 15:08:36.737 22675-22724 NearbyUWB               com.google.android.gms.persistent    I  AnalyticsLogger is shutdown. [CONTEXT service_id=49 ]
+2023-07-06 15:08:36.737 22110-22445 bt_stack                com.google.android.bluetooth         I  [INFO:le_scanning_manager.cc(148)] Unregister in shim layer, scanner_id:4
+2023-07-06 15:08:36.737 22675-23982 Uwb.Rangin...n@82b648b] com.google.android.gms.persistent    V  stop - sessionHandle: SessionHandle [id=1, package-name: com.google.android.gms, uid: 10159, pid: 22675]
+2023-07-06 15:08:36.738 21795-23006 UwbSessionManager       system_server                        I  stopRanging() - sessionId: -1568155121, sessionHandle: SessionHandle [id=1, package-name: com.google.android.gms, uid: 10159, pid: 22675]
+2023-07-06 15:08:36.741 22648-22648 EuiccGoogle             com.google.android.euicc             I  [2] UiccSlotsManager.getFirstActiveEuiccSlotId: isRemovableEsimDefault: false
+2023-07-06 15:08:36.741 22648-22648 EuiccGoogle             com.google.android.euicc             I  [2] EuiccServiceImpl.onCreate: onCreate DSDS mode: simCardState is 11
+2023-07-06 15:08:36.745 21795-21795 Compatibil...geReporter system_server                        D  Compat change id reported: 168419799; UID 10117; state: DISABLED
+2023-07-06 15:08:36.745 21795-21795 Compatibil...geReporter system_server                        D  Compat change id reported: 273564678; UID 10117; state: DISABLED
+2023-07-06 15:08:36.748 21795-24110 ActivityManager         system_server                        I  Force stopping com.themobileknowledge.uwbconnectapp appid=10258 user=0: from pid 27984
+2023-07-06 15:08:36.749 22648-22648 EuiccGoogle             com.google.android.euicc             I  [2] Partner.getResourceEntry: Partner app=com.google.android.euiccoverlay, Resource name=esim_supported_countries, type=string, id = 0
+2023-07-06 15:08:36.751 22648-22648 EuiccGoogle             com.google.android.euicc             I  [2] Partner.getResourceEntry: Partner app=com.google.android.euiccoverlay, Resource name=esim_unsupported_countries, type=string, id = 2130903040
+2023-07-06 15:08:36.752 22332-22332 CarrierSvcBindHelper    com.android.phone                    D  onHandleForceStop: [com.themobileknowledge.uwbconnectapp]
+2023-07-06 15:08:36.752 22332-22332 CarrierSvcBindHelper    com.android.phone                    D  No carrier app for: 0
+2023-07-06 15:08:36.752 22332-22332 CarrierSvcBindHelper    com.android.phone                    D  No carrier app for: 1
+2023-07-06 15:08:36.755 22648-27987 EuiccGoogle             com.google.android.euicc             I  [63] EuiccServiceImpl.onGetEuiccProfileInfoList: onGetEuiccProfileInfoList: slotId = 0
+2023-07-06 15:08:36.756 23099-23099 Registered...vicesCache com.android.nfc                      D  Service unchanged, not updating
+2023-07-06 15:08:36.757 22226-25453 SecureElementService    com.android.se                       D  getReaders() for com.android.nfc
+2023-07-06 15:08:36.757 22648-27987 EuiccGoogle             com.google.android.euicc             I  [63] EuiccServiceImpl.onGetEuiccProfileInfoList: slotId = 0, isRemovable = false
+2023-07-06 15:08:36.757 22648-27987 EuiccGoogle             com.google.android.euicc             I  [63] EuiccServiceImpl.onGetEuiccProfileInfoList: onGetEuiccProfileInfoList: isRemovable = false.
+2023-07-06 15:08:36.757 22648-27987 EuiccGoogle             com.google.android.euicc             I  [63] EuiccServiceImpl.getSimCardState: getSimCardState for slotId: 0
+2023-07-06 15:08:36.758 21795-21993 DropBoxManagerService   system_server                        I  add tag=system_server_crash isTagEnabled=true flags=0x6
+2023-07-06 15:08:36.758 22648-27987 EuiccGoogle             com.google.android.euicc             I  [63] EuiccServiceImpl.onGetEuiccProfileInfoList: GetEuiccProfileInfoListResult: simCardState :11and simCardStateAtTelephony:11 for slot:0
+2023-07-06 15:08:36.758 22648-27987 EuiccGoogle             com.google.android.euicc             I  [63] EuiccServiceImpl.getProfileInfoList: getProfileInfoList: slotId = 0.
+2023-07-06 15:08:36.758 22648-27987 EuiccGoogle             com.google.android.euicc             I  [63] EuiccServiceImpl.getEidFromSlotId: getEidFromSlotId: slotId = 0.
+2023-07-06 15:08:36.758 22648-27987 EuiccGoogle             com.google.android.euicc             I  [63] UiccSlotsManager.getEidForSlot: getEidForSlot: 0
+2023-07-06 15:08:36.759 22648-27987 EuiccGoogle             com.google.android.euicc             I  [63] BlockingEuiccCardManager.requestAllProfiles: requestAllProfiles: cardId = [J6aJ6LgM59_BRYPTiavMEa3lrpM]
+2023-07-06 15:08:36.760 22226-25453 SecureElem...minal-SIM2 com.android.se                       I  isNfcEventAllowed: No access rules for checking.
+2023-07-06 15:08:36.761 21795-21825 BroadcastQueue          system_server                        W  Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.stats.service.DropBoxEntryAddedReceiver
+2023-07-06 15:08:36.761 21795-21825 BroadcastQueue          system_server                        W  Background execution not allowed: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to com.google.android.gms/.chimera.GmsIntentOperationService$PersistentTrustedReceiver
+2023-07-06 15:08:36.761 21795-21993 Process                 system_server                        I  Sending signal. PID: 21795 SIG: 9
+2023-07-06 15:08:36.847   830-830   qorvo.uwb.uwbmac        android.hardware.qorvo.uwb.service   I  report_nl_cb
+2023-07-06 15:08:37.087   830-830   qorvo.uwb.uwbmac        android.hardware.qorvo.uwb.service   I  report_nl_cb
+2023-07-06 15:08:37.196  1036-1063  adbd                    adbd                                 I  adbd_auth: hit EOF on framework fd
+2023-07-06 15:08:37.197  1036-1063  adbd                    adbd                                 I  adbd_auth: received new framework fd -1 (current = 20)
+2023-07-06 15:08:37.200  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.200  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.202  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.202  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.203  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.203  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.205  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.205  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.209  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.209  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.213  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.213  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.216  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.216  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.220  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.220  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.222  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.222  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.222  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.222  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.223  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.223  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.224  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.225  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.228  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.228  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.229  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.229  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.232  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.232  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.233  2656-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-06 15:08:37.233  2656-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-06 15:08:37.233   401-401   lowmemorykiller         lmkd                                 I  lmkd data connection dropped
+2023-07-06 15:08:37.234   401-401   lowmemorykiller         lmkd                                 I  closing lmkd data connection
+2023-07-06 15:08:37.253   838-838   vendor.goo...ice-vendor ven...e.wifi_ext@1.0-service-vendor  D  Dead callback removed from list
+2023-07-06 15:08:37.253   838-838   vendor.goo...ice-vendor ven...e.wifi_ext@1.0-service-vendor  D  Dead callback removed from list
+2023-07-06 15:08:37.253   838-838   vendor.goo...ice-vendor ven...e.wifi_ext@1.0-service-vendor  D  Dead callback removed from list
+2023-07-06 15:08:37.254   975-8386  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb4000076a5f89278 : 0(0 size) total buffers - 0(0 size) used buffers - 9/15 (recycle/alloc) - 7/14 (fetch/transfer)
+2023-07-06 15:08:37.254   975-8386  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb4000076a5f87b58 : 0(0 size) total buffers - 0(0 size) used buffers - 12/15 (recycle/alloc) - 3/14 (fetch/transfer)
+2023-07-06 15:08:37.254   975-8386  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb4000076a5f87b58 cached: 0/0M, 0/0% in use; allocs: 15, 80% recycled; transfers: 14, 79% unfetched
+2023-07-06 15:08:37.254   975-1085  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb4000076a5f89278 cached: 0/0M, 0/0% in use; allocs: 15, 60% recycled; transfers: 14, 50% unfetched
+2023-07-06 15:08:37.254   975-3266  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb4000076a5f88dd8 : 0(0 size) total buffers - 0(0 size) used buffers - 16/19 (recycle/alloc) - 3/18 (fetch/transfer)
+2023-07-06 15:08:37.255   975-3266  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb4000076a5f88dd8 cached: 0/0M, 0/0% in use; allocs: 19, 84% recycled; transfers: 18, 83% unfetched
+2023-07-06 15:08:37.255   975-1085  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb4000076a5f86438 : 0(0 size) total buffers - 0(0 size) used buffers - 12/14 (recycle/alloc) - 2/13 (fetch/transfer)
+2023-07-06 15:08:37.255   975-1085  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb4000076a5f86438 cached: 0/0M, 0/0% in use; allocs: 14, 86% recycled; transfers: 13, 85% unfetched
+2023-07-06 15:08:37.255   975-3266  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb4000076a5f81c88 : 0(0 size) total buffers - 0(0 size) used buffers - 21/25 (recycle/alloc) - 4/24 (fetch/transfer)
+2023-07-06 15:08:37.255   975-3266  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb4000076a5f81c88 cached: 0/0M, 0/0% in use; allocs: 25, 84% recycled; transfers: 24, 83% unfetched
+2023-07-06 15:08:37.255   975-1085  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb4000076a5f86d78 : 0(0 size) total buffers - 0(0 size) used buffers - 3/5 (recycle/alloc) - 2/4 (fetch/transfer)
+2023-07-06 15:08:37.255   975-1085  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb4000076a5f86d78 cached: 0/0M, 0/0% in use; allocs: 5, 60% recycled; transfers: 4, 50% unfetched
+2023-07-06 15:08:37.256 21688-21715 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-06 15:08:37.256 21688-21715 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-06 15:08:37.256 21688-21715 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-06 15:08:37.256 21688-21715 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-06 15:08:37.256 21688-21715 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-06 15:08:37.256 21688-21715 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-06 15:08:37.256 21688-21715 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-06 15:08:37.257   765-1765  IPCThreadState          statsd                               E  attemptIncStrongHandle(29): Not supported
+2023-07-06 15:08:37.258 21691-21927 IPCThreadState          netd                                 E  attemptIncStrongHandle(6): Not supported
+2023-07-06 15:08:37.258 22177-22177 wpa_supplicant          wpa_supplicant                       E  Client died. Terminating...
+2023-07-06 15:08:37.259 22177-22177 wpa_supplicant          wpa_supplicant                       E  unlinkToDeath: removed reference to death recipient but unlink failed.
+2023-07-06 15:08:37.260 22675-24062 GameService             com.google.android.gms.persistent    W  System service binder died. Shutting down
+2023-07-06 15:08:37.262 21687-21687 Zygote                  zygote64                             E  Zygote failed to write to system_server FD: Connection refused
+2023-07-06 15:08:37.262 21687-21687 Zygote                  zygote64                             I  Process 21795 exited due to signal 9 (Killed)
+2023-07-06 15:08:37.262 21687-21687 Zygote                  zygote64                             E  Exit zygote because system server (pid 21795) has terminated
+2023-07-06 15:08:37.262 22675-22675 GameService             com.google.android.gms.persistent    I  onDisconnected [CONTEXT service_id=311 ]
+2023-07-06 15:08:37.262 21691-21926 netd                    netd                                 E  unlinkToDeath: removed reference to death recipient but unlink failed.
+2023-07-06 15:08:37.263 22921-23542 VoiceInteractionService com...oglequicksearchbox:interactor  E  system service binder died shutting down
+2023-07-06 15:08:37.263 21688-21957 CaptureStateNotifier    audioserver                          I  Listener binder died
+2023-07-06 15:08:37.263   788-788   android.ha...ce.generic and...re.contexthub-service.generic  I  Context Hub Service died ...
+2023-07-06 15:08:37.263   788-788   IPCThreadState          and...re.contexthub-service.generic  E  attemptIncStrongHandle(1): Not supported
+2023-07-06 15:08:37.263   830-830   qorvo.uwb.hal.UwbChip   android.hardware.qorvo.uwb.service   I  close
+2023-07-06 15:08:37.263   830-830   qorvo.uwb....AndroidCCC android.hardware.qorvo.uwb.service   I  Reset
+2023-07-06 15:08:37.263   830-830   qorvo.uwb....AndroidCCC android.hardware.qorvo.uwb.service   I  OnSessionDeinit
+2023-07-06 15:08:37.263   830-830   qorvo.uwb.hal.UwbChip   android.hardware.qorvo.uwb.service   I  onResetDone
+2023-07-06 15:08:37.263   830-830   qorvo.uwb.hal.UwbChip   android.hardware.qorvo.uwb.service   I  closeBackends
+2023-07-06 15:08:37.263   830-830   qorvo.uwb....cCallbacks android.hardware.qorvo.uwb.service   I  resetBackend Reset service from backend
+2023-07-06 15:08:37.263   830-830   qorvo.uwb....ckend_fira android.hardware.qorvo.uwb.service   I  state_notification_with_code: MT/GID/OID 6102 NTF 1 (0)
+2023-07-06 15:08:37.263 22453-24488 Sensors                 com...le.android.apps.nexuslauncher  W  sensorservice died [0xb400007a448d1fc0]
+2023-07-06 15:08:37.263 22150-22172 Sensors                 com.android.hbmsvmanager             W  sensorservice died [0xb400007a448d10a0]
+2023-07-06 15:08:37.263   765-1765  statsd                  statsd                               W  statscompanion service died
+2023-07-06 15:08:37.263   765-1765  statsd                  statsd                               W  Reset statsd upon system server restarts.
+2023-07-06 15:08:37.264   830-830   qorvo.uwb....AndroidCCC android.hardware.qorvo.uwb.service   I  ~UciBackendAndroidCCC
+2023-07-06 15:08:37.264   830-830   qorvo.uwb....AndroidCCC android.hardware.qorvo.uwb.service   I  ResetController
+2023-07-06 15:08:37.264   830-830   qorvo.uwb.hal.UwbMac    android.hardware.qorvo.uwb.service   I  void hardware::qorvo::NfccCoex::Reset()
+2023-07-06 15:08:37.264   830-830   qorvo.uwb.hal.UwbMac    android.hardware.qorvo.uwb.service   I  int hardware::qorvo::NfccCoex::RangingStop()
+2023-07-06 15:08:37.264   830-830   qorvo.uwb.hal.UwbMac    android.hardware.qorvo.uwb.service   I  int hardware::qorvo::NfccCoex::SessionDeinit()
+2023-07-06 15:08:37.264   830-830   qorvo.uwb.hal.UwbMac    android.hardware.qorvo.uwb.service   I  hardware::qorvo::NfccCoex::~NfccCoex()
+2023-07-06 15:08:37.264   830-830   qorvo.uwb.hal.UwbMac    android.hardware.qorvo.uwb.service   I  void hardware::qorvo::NfccCoex::Reset()
+2023-07-06 15:08:37.264   830-830   qorvo.uwb.hal.UwbMac    android.hardware.qorvo.uwb.service   I  int hardware::qorvo::NfccCoex::RangingStop()
+2023-07-06 15:08:37.264   830-830   qorvo.uwb.hal.UwbMac    android.hardware.qorvo.uwb.service   I  int hardware::qorvo::NfccCoex::SessionDeinit()
+2023-07-06 15:08:37.264   830-830   qorvo.uwb.hal.UwbMac    android.hardware.qorvo.uwb.service   I  hardware::qorvo::NfccCoex::~NfccCoex() helper_close
+2023-07-06 15:08:37.264 23343-23360 Sensors                 com...d.googlequicksearchbox:search  W  sensorservice died [0xb400007a4490e0e0]
+2023-07-06 15:08:37.264   765-1765  IPCThreadState          statsd                               E  attemptIncStrongHandle(92): Not supported
+2023-07-06 15:08:37.264 25516-27466 Sensors                 com.google.android.GoogleCamera      W  sensorservice died [0xb400007a448df220]
+2023-07-06 15:08:37.264 22921-23542 Sensors                 com...oglequicksearchbox:interactor  W  sensorservice died [0xb400007a448d46f0]
+2023-07-06 15:08:37.264 22921-22921 GsaVoiceInteractionSrv  com...oglequicksearchbox:interactor  I  onShutdown
+2023-07-06 15:08:37.264 23216-27349 Sensors                 com.google.android.apps.dreamliner   W  sensorservice died [0xb400007a448d1a40]
+2023-07-06 15:08:37.265 22675-24062 Sensors                 com.google.android.gms.persistent    W  sensorservice died [0xb400007a448d94a0]
+2023-07-06 15:08:37.266 22921-22921 VIS.ServiceLifecycle    com...oglequicksearchbox:interactor  I  #onShutdown()
+2023-07-06 15:08:37.266 22675-24062 Sensors                 com.google.android.gms.persistent    W  sensorservice died [0xb400007a448d94a0]
+2023-07-06 15:08:37.267 22900-22919 Sensors                 com.google.android.as                W  sensorservice died [0xb400007a448d63d0]
+2023-07-06 15:08:37.267 22921-22921 VIS.ServiceLifecycle    com...oglequicksearchbox:interactor  I  (REDACTED) Running action(%s) over listeners(%s).
+2023-07-06 15:08:37.267 22002-27806 Sensors                 com.android.systemui                 W  sensorservice died [0xb400007a448d8f20]
+2023-07-06 15:08:37.267 24311-24334 Sensors                 com.google.android.apps.scone        W  sensorservice died [0xb400007a448d4c70]
+2023-07-06 15:08:37.267 22342-22431 Sensors                 com.android.settings                 W  sensorservice died [0xb400007a448df170]
+2023-07-06 15:08:37.268 22921-22921 VIS.ServiceLifecycle    com...oglequicksearchbox:interactor  I  (REDACTED) Done action(%s) over listeners(%s).
+2023-07-06 15:08:37.269 22921-22921 AndroidRuntime          com...oglequicksearchbox:interactor  D  Shutting down VM
+2023-07-06 15:08:37.270 22921-23476 ApaPinning              com...oglequicksearchbox:interactor  I  (REDACTED) Running '%s' over %s.
+2023-07-06 15:08:37.270 22921-22921 AndroidRuntime          com...oglequicksearchbox:interactor  E  FATAL EXCEPTION: main
+                                                                                                    Process: com.google.android.googlequicksearchbox:interactor, PID: 22921
+                                                                                                    DeadSystemException: The system died; earlier logs will point to the root cause
+2023-07-06 15:08:37.270 22921-23476 ApaPinning              com...oglequicksearchbox:interactor  I  (REDACTED) Running '%s' over %s.
+2023-07-06 15:08:37.271 22921-23476 ApaPinning              com...oglequicksearchbox:interactor  I  (REDACTED) Completed '%s' over %s: %s.
+2023-07-06 15:08:37.271 22921-23476 ApaPinning              com...oglequicksearchbox:interactor  I  (REDACTED) Running '%s' over %s.
+2023-07-06 15:08:37.271 22921-23476 ApaPinning              com...oglequicksearchbox:interactor  I  (REDACTED) Running '%s' over %s.
+2023-07-06 15:08:37.271 22921-23476 Ma-Entry-T...ng-Pinning com...oglequicksearchbox:interactor  I  #onDestroy
+2023-07-06 15:08:37.273   463-463   SurfaceFlinger          surfaceflinger                       D  Setting power mode 2 on display 4619827677550801152
+2023-07-06 15:08:37.273   802-802   android.ha...vice.gs201 and...hardware.health-service.gs201  E  unlinkToDeath: removed reference to death recipient but unlink failed.
+2023-07-06 15:08:37.273   802-802   IPCThreadState          and...hardware.health-service.gs201  E  attemptIncStrongHandle(2): Not supported
+2023-07-06 15:08:37.273 22921-23476 Ma-Entry-T...ng-Pinning com...oglequicksearchbox:interactor  I  #disconnectAndStop - preventing double stop
+2023-07-06 15:08:37.277 22921-23369 A                       com...oglequicksearchbox:interactor  I  #onDestroy
+2023-07-06 15:08:37.277 22921-23476 Ma-fcf-A11...geNotifier com...oglequicksearchbox:interactor  I  #FCF: unsubscribe
+2023-07-06 15:08:37.278 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  The following traces were active when the app crashed:
+2023-07-06 15:08:37.278 22921-23476 A11yListener            com...oglequicksearchbox:interactor  I  #close: Stop listening
+2023-07-06 15:08:37.280 22921-23476 ApaPinning              com...oglequicksearchbox:interactor  I  (REDACTED) Completed '%s' over %s: %s.
+2023-07-06 15:08:37.282 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  Trace: 0
+2023-07-06 15:08:37.282 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000000	ApaVoiceInteractionService#onShutdown > 0 ms
+2023-07-06 15:08:37.282 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000000	ApaVoiceInteractionService#onShutdown > VoiceInteractionServiceLifecycleCallbacks#onShutdown > 2 ms
+2023-07-06 15:08:37.282 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  Trace: 1
+2023-07-06 15:08:37.283 22921-23532 ApaPinning              com...oglequicksearchbox:interactor  I  (REDACTED) Completed '%s' over %s: %s.
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000000	ApaVoiceInteractionService#onReady > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000000	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > 13 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000217	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get Account > 3 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000217	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get Account > Initialize Account > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000220	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get Account > Read Account > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000221	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountSyncData > 2 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000221	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountSyncData > Initialize AccountSyncData > 1 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000222	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountSyncData > Initialize AccountSyncData > Read AccountSyncData > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000223	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountData > 401 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000223	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountData > Initialize AccountData > 398 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000223	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountData > Initialize AccountData > Get TikTokAccountStoreMigration > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000223	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountData > Initialize AccountData > Get TikTokAccountStoreMigration > Initialize TikTokAccountStoreMigration > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000223	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountSyncData > Read AccountSyncData > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000224	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountData > Initialize AccountData > Get TikTokAccountStoreMigration > Read TikTokAccountStoreMigration > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000385	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountData > Initialize AccountData > Read AccountData > 61 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000447	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountData > Initialize AccountData > Read AccountData > 174 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000622	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get AccountData > Read AccountData > 2 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000664	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > onServiceConnected > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000684	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > unbind > 2 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000740	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: googledata.experiments.mobile.assistant.client_packages.component.assistant_tng_interactor.device > 4 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000740	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: googledata.experiments.mobile.assistant.client_packages.component.assistant_tng_interactor.device > Get googledata.experiments.mobile.assistant.client_packages.component.assistant_tng_interactor.device#com.google.android.googlequicksearchbox > 2 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000741	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: googledata.experiments.mobile.assistant.client_packages.component.assistant_tng_interactor.device > Get googledata.experiments.mobile.assistant.client_packages.component.assistant_tng_interactor.device#com.google.android.googlequicksearchbox > Initialize googledata.experiments.mobile.assistant.client_packages.component.assistant_tng_interactor.device#com.google.android.googlequicksearchbox > 1 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000742	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: googledata.experiments.mobile.assistant.client_packages.component.assistant_tng_interactor.device > Get googledata.experiments.mobile.assistant.client_packages.component.assistant_tng_interactor.device#com.google.android.googlequicksearchbox > Read googledata.experiments.mobile.assistant.client_packages.component.assistant_tng_interactor.device#com.google.android.googlequicksearchbox > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000759	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.device > 146 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000760	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.device > Get com.google.android.apps.search.assistant.device#com.google.android.googlequicksearchbox > 24 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000760	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.device > Get com.google.android.apps.search.assistant.device#com.google.android.googlequicksearchbox > Initialize com.google.android.apps.search.assistant.device#com.google.android.googlequicksearchbox > 2 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000763	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.device > Get com.google.android.apps.search.assistant.device#com.google.android.googlequicksearchbox > Read com.google.android.apps.search.assistant.device#com.google.android.googlequicksearchbox > 20 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000924	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.user > 157 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000924	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.user > Get com.google.android.apps.search.assistant.user#com.google.android.googlequicksearchbox > 7 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000924	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.user > Get com.google.android.apps.search.assistant.user#com.google.android.googlequicksearchbox > Initialize com.google.android.apps.search.assistant.user#com.google.android.googlequicksearchbox > 1 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  000926	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.user > Get com.google.android.apps.search.assistant.user#com.google.android.googlequicksearchbox > Read com.google.android.apps.search.assistant.user#com.google.android.googlequicksearchbox > 5 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001083	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get primary search account > 1 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001124	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.mobile.interactor.user > 1 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001124	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.mobile.interactor.user > Get com.google.android.apps.search.assistant.mobile.interactor.user#com.google.android.googlequicksearchbox > 1 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001124	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.mobile.interactor.user > Get com.google.android.apps.search.assistant.mobile.interactor.user#com.google.android.googlequicksearchbox > Initialize com.google.android.apps.search.assistant.mobile.interactor.user#com.google.android.googlequicksearchbox > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001125	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.mobile.interactor.user > Get com.google.android.apps.search.assistant.mobile.interactor.user#com.google.android.googlequicksearchbox > Read com.google.android.apps.search.assistant.mobile.interactor.user#com.google.android.googlequicksearchbox > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001173	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get ClassicFlagsData > 98 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001173	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get ClassicFlagsData > Initialize ClassicFlagsData > 16 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001188	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get ClassicFlagsData > Initialize ClassicFlagsData > Read ClassicFlagsData > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001189	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get ClassicFlagsData > Read ClassicFlagsData > 82 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001227	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.libraries.search.googleapp.user > 35 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001228	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.libraries.search.googleapp.user > Get com.google.android.libraries.search.googleapp.user#com.google.android.googlequicksearchbox > 2 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001228	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.libraries.search.googleapp.user > Get com.google.android.libraries.search.googleapp.user#com.google.android.googlequicksearchbox > Initialize com.google.android.libraries.search.googleapp.user#com.google.android.googlequicksearchbox > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001228	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.libraries.search.googleapp.user > Get com.google.android.libraries.search.googleapp.user#com.google.android.googlequicksearchbox > Read com.google.android.libraries.search.googleapp.user#com.google.android.googlequicksearchbox > 2 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001278	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.mobile.user > 3 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001279	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.mobile.user > Get com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox > 1 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001279	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.mobile.user > Get com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox > Initialize com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001279	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Blocking for: com.google.android.apps.search.assistant.mobile.user > Get com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox > Read com.google.android.apps.search.assistant.mobile.user#com.google.android.googlequicksearchbox > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001302	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > ApaPinning#onCreate > 1024 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001304	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > ApaPinning#onCreate > VoiceAssistantPinnedClient#onCreate > 1017 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001343	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > ApaPinning#onCreate > VoiceAssistantPinnedClient#onCreate > Get MobileLocaleSettingsProtoStore > 165 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001343	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > ApaPinning#onCreate > VoiceAssistantPinnedClient#onCreate > Get MobileLocaleSettingsProtoStore > Initialize MobileLocaleSettingsProtoStore > 163 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001345	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > ApaPinning#onCreate > VoiceAssistantPinnedClient#onCreate > Get MobileLocaleSettingsProtoStore > Initialize MobileLocaleSettingsProtoStore > Read MobileLocaleSettingsProtoStore > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001351	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > ApaPinning#onCreate > VoiceAssistantPinnedClient#onCreate > Get MobileLocaleSettingsProtoStore > Initialize MobileLocaleSettingsProtoStore > Read MobileLocaleSettingsProtoStore > 21 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001354	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > ApaPinning#onCreate > VoiceAssistantPinnedClient#onCreate > getDataAsFuture > 52 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001354	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > ApaPinning#onCreate > VoiceAssistantPinnedClient#onCreate > getDataAsFuture > First load > 18 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  001507	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > ApaPinning#onCreate > VoiceAssistantPinnedClient#onCreate > Get MobileLocaleSettingsProtoStore > Read MobileLocaleSettingsProtoStore > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  002109	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get primary search account > 0 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  002804	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get primary search account > 1 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  003929	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > Get primary search account > 2 ms
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  149882	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > ApaPinning#onDestroy > unfinished
+2023-07-06 15:08:37.285 22921-22921 trace_manager           com...oglequicksearchbox:interactor  I  149884	ApaVoiceInteractionService#onReady > VoiceInteractionServiceLifecycleCallbacks#onReady > ApaPinning#onDestroy > VoiceAssistantPinnedClient#onDestroy > 7 ms
+2023-07-06 15:08:37.287 22921-23532 ApaPinning              com...oglequicksearchbox:interactor  E  (REDACTED) Failure running %s for %s.
+                                                                                                    DeadSystemException: The system died; earlier logs will point to the root cause
+2023-07-06 15:08:37.287 22921-23532 ApaPinning              com...oglequicksearchbox:interactor  E  (REDACTED) Failure running %s for %s.
+                                                                                                    DeadSystemException: The system died; earlier logs will point to the root cause
+2023-07-06 15:08:37.287 22921-23532 ApaPinning              com...oglequicksearchbox:interactor  E  (REDACTED) Failure running %s for %s.
+                                                                                                    DeadSystemException: The system died; earlier logs will point to the root cause
+2023-07-06 15:08:37.288 22921-23107 AndroidRuntime          com...oglequicksearchbox:interactor  E  FATAL EXCEPTION: GoogleApiHandler
+                                                                                                    Process: com.google.android.googlequicksearchbox:interactor, PID: 22921
+                                                                                                    DeadSystemException: The system died; earlier logs will point to the root cause
+2023-07-06 15:08:37.288 22921-22921 A                       com...oglequicksearchbox:interactor  W  Failed to get process stats.
+                                                                                                    DeadSystemException: The system died; earlier logs will point to the root cause
+2023-07-06 15:08:37.294 22921-22921 A                       com...oglequicksearchbox:interactor  W  Exception while getting crash metric extension!
+                                                                                                    DeadSystemException: The system died; earlier logs will point to the root cause
+2023-07-06 15:08:37.323  1017-1017  AOC                     aocd                                 D  A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x00cb, tag: 0x1e [cntr = 142]
+2023-07-06 15:08:37.323  1017-1017  AOC                     aocd                                 D  A3:MSG: controller.cc, 811: CNTRL: ipc: uwb_service, cmd ID: 0x00cb, tag: 0x1e, rc: 0
+2023-07-06 15:08:37.324  1017-1017  AOC                     aocd                                 D  A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x00cd, tag: 0x1f [cntr = 143]
+2023-07-06 15:08:37.324  1017-1017  AOC                     aocd                                 D  A3:MSG: controller.cc, 811: CNTRL: ipc: uwb_service, cmd ID: 0x00cd, tag: 0x1f, rc: 0
+2023-07-06 15:08:37.332 27995-27995 BootAnimation           pid-27995                            D  BootAnimationStartTiming start time: 766760ms
+2023-07-06 15:08:37.332 27995-27995 BootAnimation           pid-27995                            D  BootAnimationPreloadTiming start time: 766760ms
+2023-07-06 15:08:37.333 27995-27995 BootAnimation           pid-27995                            D  /product/media/bootanimation-dark.zip is loaded successfully
+2023-07-06 15:08:37.333   425-425   vold                    vold                                 D  Aborting fuse connection entry /sys/fs/fuse/connections/132/abort
+2023-07-06 15:08:37.333   425-425   vold                    vold                                 W  Skip fsync /sys/fs/fuse/connections/132/abort on a file system does not support synchronization: Invalid argument
+2023-07-06 15:08:37.334 22177-22177 wpa_supplicant          wpa_supplicant                       I  p2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+2023-07-06 15:08:37.334   830-830   qorvo.uwb.uwbmac        android.hardware.qorvo.uwb.service   I  ack_handler
+2023-07-06 15:08:37.334   830-830   qorvo.uwb.uwbmac        android.hardware.qorvo.uwb.service   I  ack_handler
+2023-07-06 15:08:37.334   830-830   qorvo.uwb.hal.UwbChip   android.hardware.qorvo.uwb.service   I  onResetDone: Closed as requested, send HAL CLOSE event
+2023-07-06 15:08:37.334   830-830   qorvo.uwb.hal.UwbChip   android.hardware.qorvo.uwb.service   E  onResetDone: Failed to send HAL CLOSE event
+2023-07-06 15:08:37.334   830-830   qorvo.uwb.hal.UwbChip   android.hardware.qorvo.uwb.service   I  close: Exit
+2023-07-06 15:08:37.334   830-830   android.ha...wb.service android.hardware.qorvo.uwb.service   E  unlinkToDeath: removed reference to death recipient but unlink failed.
+2023-07-06 15:08:37.334   934-938   WPKTRT                  wfc-pkt-router                       I  process_link_down_or_deleted: wpan0 is deactivated
+2023-07-06 15:08:37.334 27995-27995 BootAnimation           pid-27995                            D  BootAnimationPreloadStopTiming start time: 766762ms
+2023-07-06 15:08:37.335   471-14806 display                 and...e.composer.hwc3-service.pixel  D  getColorModes: size(3)
+2023-07-06 15:08:37.335   471-14806 display                 and...e.composer.hwc3-service.pixel  D  getColorModes: size(3)
+2023-07-06 15:08:37.335   471-14806 display                 and...e.composer.hwc3-service.pixel  D  	mode[0] 0
+2023-07-06 15:08:37.335   471-14806 display                 and...e.composer.hwc3-service.pixel  D  	mode[1] 7
+2023-07-06 15:08:37.335   471-14806 display                 and...e.composer.hwc3-service.pixel  D  	mode[2] 9
+2023-07-06 15:08:37.335   471-612   display                 and...e.composer.hwc3-service.pixel  D  lookupDisplayConfigs: found display config for mode: 1080x2340@120=37
+2023-07-06 15:08:37.338 22177-22177 wpa_supplicant          wpa_supplicant                       I  p2p-dev-wlan0: CTRL-EVENT-DSCP-POLICY clear_all
+2023-07-06 15:08:37.338 22177-22177 wpa_supplicant          wpa_supplicant                       I  nl80211: deinit ifname=p2p-dev-wlan0 disabled_11b_rates=0
+2023-07-06 15:08:37.347 27995-28004 libEGL                  pid-27995                            D  loaded /vendor/lib64/egl/libGLES_mali.so
+2023-07-06 15:08:37.359 22177-22177 wpa_supplicant          wpa_supplicant                       I  p2p-dev-wlan0: CTRL-EVENT-TERMINATING 
+2023-07-06 15:08:37.359 22177-22177 wpa_supplicant          wpa_supplicant                       I  wlan0: Do not deauthenticate as part of interface deinit since WoWLAN is enabled
+2023-07-06 15:08:37.360 22177-22177 wpa_supplicant          wpa_supplicant                       I  wlan0: PMKSA-CACHE-REMOVED e6:ae:6c:98:ca:49 0
+2023-07-06 15:08:37.387 27995-28004 BootAnimation           pid-27995                            I  Loaded dynamic color: persist.bootanim.color1 -> -1581313
+2023-07-06 15:08:37.387 27995-28004 BootAnimation           pid-27995                            I  Loaded dynamic color: persist.bootanim.color2 -> -9129001
+2023-07-06 15:08:37.387 27995-28004 BootAnimation           pid-27995                            I  Loaded dynamic color: persist.bootanim.color3 -> -10061435
+2023-07-06 15:08:37.387 27995-28004 BootAnimation           pid-27995                            I  Loaded dynamic color: persist.bootanim.color4 -> -3872769
+2023-07-06 15:08:37.387 27995-28004 BootAnimation           pid-27995                            I  Dynamically coloring boot animation. Sysprops loaded? 1
+2023-07-06 15:08:37.388 27995-28004 BootAnimation           pid-27995                            D  BootAnimationShownTiming start time: 766815ms
+2023-07-06 15:08:37.388 27995-28004 BootAnimation           pid-27995                            D  Playing files = /product/media/bootanimation-dark.zip/part0, Requested repeat = 1, playUntilComplete = true
+2023-07-06 15:08:37.391   403-403   hwservicemanager        hwservicemanager                     I  getTransport: Cannot find entry android.hardware.graphics.allocator@4.0::IAllocator/default in either framework or device VINTF manifest.
+2023-07-06 15:08:37.391   402-402   servicemanager          servicemanager                       I  Found android.hardware.graphics.allocator.IAllocator/default in device VINTF manifest.
+2023-07-06 15:08:37.416 21690-23044 AudioSystem             mediaserver                          W  AudioFlinger server died!
+2023-07-06 15:08:37.416 21690-21690 AudioSystem             mediaserver                          W  AudioPolicyService server died!
+2023-07-06 15:08:37.416 21693-21693 audio_hw_output_stream  android.hardware.audio.service       D  adev_close_output_stream  handle 13 
+2023-07-06 15:08:37.416 21693-21701 audio_hw_output_stream  android.hardware.audio.service       D  adev_close_output_stream  handle 45 
+2023-07-06 15:08:37.416 21693-21701 audio_hw_output_stream  android.hardware.audio.service       D  adev_close_output_stream  handle 69 
+2023-07-06 15:08:37.416 21693-21701 audio_hw_output_stream  android.hardware.audio.service       D  adev_close_output_stream  handle 61 
+2023-07-06 15:08:37.416 21693-21701 audio_hw_output_stream  android.hardware.audio.service       D  adev_close_output_stream  handle 77 
+2023-07-06 15:08:37.417 21693-28017 r_submix                android.hardware.audio.service       I  adev_close()
+2023-07-06 15:08:37.417 21693-21693 audio_hw_output_stream  android.hardware.audio.service       D  adev_close_output_stream  handle 21 
+2023-07-06 15:08:37.417 21693-21693 audio_hw_output_stream  android.hardware.audio.service       D  adev_close_output_stream  handle 37 
+2023-07-06 15:08:37.417 21693-21693 audio_hw                android.hardware.audio.service       D  adev_close 0x0xb400006f5206ad00 0x0xb400006f5206ad00
+2023-07-06 15:08:37.424 22177-22177 wpa_supplicant          wpa_supplicant                       I  wlan0: CTRL-EVENT-DISCONNECTED bssid=e6:ae:6c:98:ca:49 reason=1 locally_generated=1
+2023-07-06 15:08:37.424 22177-22177 wpa_supplicant          wpa_supplicant                       E  Failed to invoke AIDL iface callback
+2023-07-06 15:08:37.432   402-402   servicemanager          servicemanager                       I  Found android.hardware.health.IHealth/default in device VINTF manifest.
+2023-07-06 15:08:37.434  1460-1460  pixel-thermal           and...are.thermal@2.0-service.pixel  I  a callback has been unregistered to ThermalHAL, isFilter: 1 Type: SKIN
+2023-07-06 15:08:37.434  1460-1460  pixel-thermal           and...are.thermal@2.0-service.pixel  I  a callback has been unregistered to ThermalHAL, isFilter: 1 Type: BCL_VOLTAGE
+2023-07-06 15:08:37.434 21693-21730 audio_hw_35l41          android.hardware.audio.service       W  cs35l41_monitor_thread: ret: 0, state: 4
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: CAL_SET_STATUS, index: 4
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: Main AMP Enable Switch, index: 5
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: DSP Booted, index: 6
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: PCM Source, index: 7
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: Hibernate Force Wake, index: 8
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: RTLOG_VARIABLE, index: 9
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: RTLOG_ENABLE, index: 10
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: RTLOG_COUNT, index: 11
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: RTLOG_STATE, index: 12
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: RTLOG_DATA, index: 13
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: BDLOG_MAX_TEMP, index: 14
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: BDLOG_MAX_EXC, index: 15
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: BDLOG_OVER_TEMP_COUNT, index: 16
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: BDLOG_OVER_EXC_COUNT, index: 17
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: BDLOG_ABNORMAL_MUTE, index: 18
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: HALO_HEARTBEAT, index: 19
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: CSPL_STATE, index: 20
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: CSPL_ERRORNO, index: 21
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_release_controls_memory: free memory for name: CSPL_COMMAND, index: 22
+2023-07-06 15:08:37.435 21693-21693 audio_hw_35l41          android.hardware.audio.service       D  cs35l41_amp_release_resources: release resources completed
+2023-07-06 15:08:37.435 21693-21693 audio_hw_acoustic_shock android.hardware.audio.service       D  ~AcousticShock
+2023-07-06 15:08:37.446 21693-21693 FVSAM_LOG               android.hardware.audio.service       D  Put Handle
+2023-07-06 15:08:37.448 21693-21693 OE::audio_...oad_effect android.hardware.audio.service       I  Deinitialize offload effects wrapper module
+2023-07-06 15:08:37.448 21693-21693 OE::audio_...oad_effect android.hardware.audio.service       I  DspController::setAudioDeviceAndResetHandleAndUsecase: reset all handles and set audio device as 0x0
+2023-07-06 15:08:37.448 21693-21693 amcs_ext                android.hardware.audio.service       D  amcs_ext_deinit
+2023-07-06 15:08:37.448 21693-21693 amcs_ext_file           android.hardware.audio.service       D  amcs_file_io_deinit
+2023-07-06 15:08:37.448 21693-21693 amcs_ext_file           android.hardware.audio.service       D  close_file_resource
+2023-07-06 15:08:37.450   975-1085  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb4000076a5f7e9a8 : 0(0 size) total buffers - 0(0 size) used buffers - 65/69 (recycle/alloc) - 4/68 (fetch/transfer)
+2023-07-06 15:08:37.450   975-1085  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb4000076a5f7e9a8 cached: 0/0M, 0/0% in use; allocs: 69, 94% recycled; transfers: 68, 94% unfetched
+2023-07-06 15:08:37.450 21693-21737 audio_hw_snd_restart    android.hardware.audio.service       D  aoc_state_monitor_thread: stop monitor thread.
+2023-07-06 15:08:37.450 21693-21693 audio_hw_bt             android.hardware.audio.service       D  send_cmd_to_monitor_thread: sending command CMD_MONITOR_THREAD_EXIT (6) to monitor thread
+2023-07-06 15:08:37.450 21693-21738 audio_hw_bt             android.hardware.audio.service       D  read_cmd_from_pipe: reading command CMD_MONITOR_THREAD_EXIT (6) from main thread.
+2023-07-06 15:08:37.450 21693-21738 audio_hw_bt             android.hardware.audio.service       D  bt_monitor_thread: bt_monitor_thread Exit
+2023-07-06 15:08:37.451 21693-21693 audio_hw_usb            android.hardware.audio.service       D  send_cmd_to_monitor_thread: sending command 4 to monitor thread.
+2023-07-06 15:08:37.451 21693-21739 audio_hw_usb            android.hardware.audio.service       D  read_cmd_from_pipe: reading command 4 from main thread.
+2023-07-06 15:08:37.451 21693-21739 audio_hw_usb            android.hardware.audio.service       D  usb_monitor_thread: usb_monitor_thread Exit
+2023-07-06 15:08:37.452 21693-21693 audio_hw_t...l_throttle android.hardware.audio.service       W  Deinitialize: Failed to callback to client
