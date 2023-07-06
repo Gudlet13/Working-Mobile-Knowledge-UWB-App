@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/distancealertitem_notificationframe"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/distancealert_listitem_frameheight"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="3dp"
+        android:visibility="invisible"
+        app:strokeColor="@android:color/background_dark"
+        app:strokeWidth="2dp"
+        app:cardElevation="2dp"
+        app:cardMaxElevation="2dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/distancealertitem_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/distancealert_listitem_frameheight"
+            android:visibility="visible"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <ImageView
+                android:id="@+id/distancealertitem_imageedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distancealert_listitem_imageedit_marginhorizontal"
+                android:layout_marginVertical="@dimen/distancealert_listitem_imageedit_marginvertical"
+                android:src="@drawable/ic_baseline_edit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/distancealertitem_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="@dimen/distancealert_listitem_distance_marginhorizontal"
+                android:layout_marginVertical="@dimen/distancealert_listitem_distance_marginvertical"
+                android:text="Distance"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeMinTextSize="14sp"
+                android:gravity="center_vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/distancealertitem_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distancealert_listitem_name_marginhorizontal"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_vertical"
+                android:text="Example Name"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintBottom_toTopOf="@id/distancealertitem_address"
+                app:layout_constraintStart_toEndOf="@id/distancealertitem_imageedit"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/distancealertitem_distance"/>
+
+            <TextView
+                android:id="@+id/distancealertitem_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/distancealert_listitem_name_marginhorizontal"
+                android:autoSizeMaxTextSize="14sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:text="11:22:33:44:55:66"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/distancealertitem_name"
+                app:layout_constraintStart_toEndOf="@id/distancealertitem_imageedit"
+                app:layout_constraintEnd_toStartOf="@id/distancealertitem_distance"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/distancealertitem_thresholdframe"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="@dimen/distancealert_separators_horizontalmargin"
+        android:layout_marginVertical="10dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:id="@+id/distancealert_separatorleft"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/oval_dashed_line_left"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="@dimen/distancealert_separator_lineweight"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/distancealert_threshold_distance"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/distancealert_threshold_distance"
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:gravity="center"
+            android:text="@string/distancealert_farrangeseparator_distance"
+            android:textColor="@color/distancealert_separator_background"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_weight="@dimen/distancealert_separator_textweight"
+            app:layout_constraintLeft_toRightOf="@+id/distancealert_separatorleft"
+            app:layout_constraintRight_toLeftOf="@+id/distancealert_separatorright"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/distancealert_separatorright"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/oval_dashed_line_right"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_weight="@dimen/distancealert_separator_lineweight"
+            app:layout_constraintLeft_toRightOf="@+id/distancealert_threshold_distance"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,56 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.themobileknowledge.uwbconnectapp'
+
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.themobileknowledge.uwbconnectapp"
+        minSdkVersion 31
+        targetSdkVersion 33
+        versionCode 1
+        versionName "1.1"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            def version = variant.versionName
+            def newApkName = "mk-uwb-connect-app_v" + version + ".apk"
+            outputFileName = new File(newApkName)
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'com.google.android.material:material:1.9.0'
+
+    // Used for AR implementation in Tracker Demo
+    implementation 'com.google.ar:core:1.38.0'
+    implementation 'de.javagl:obj:0.4.0'
+
+    // Used to implement UWB (ultra-wideband) on supported devices
+    implementation "androidx.core.uwb:uwb-rxjava3:1.0.0-alpha05"
+    implementation "androidx.core.uwb:uwb:1.0.0-alpha05"
+}
+dependencies {
+    constraints {
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.8.0") {
+            because("kotlin-stdlib-jdk7 is now a part of kotlin-stdlib")
+        }
+        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.8.0") {
+            because("kotlin-stdlib-jdk8 is now a part of kotlin-stdlib")
+        }
+    }
+}

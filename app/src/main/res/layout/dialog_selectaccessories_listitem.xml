@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/selectaccessoriesdialog_listitem_cardview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/selectaccessoriesdialog_listitem_frameheight"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginVertical="3dp"
+        app:cardElevation="2dp"
+        app:cardMaxElevation="2dp"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/selectaccessoriesdialog_listitem_background"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/selectaccessoriesdialog_listitem_frameheight"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/selectaccessoriesdialog_listitem_imageedit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/selectaccessoriesdialog_listitem_imageedit_horizontalmargin"
+                android:layout_marginVertical="@dimen/selectaccessoriesdialog_listitem_imageedit_verticalmargin"
+                android:src="@drawable/ic_baseline_edit"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/selectaccessoriesdialog_listitem_imagebonded"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/selectaccessoriesdialog_listitem_imagebonded_horizontalmargin"
+                android:layout_marginVertical="@dimen/selectaccessoriesdialog_listitem_imagebonded_verticalmargin"
+                android:src="@drawable/ic_baseline_bluetooth_connected"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/selectaccessoriesdialog_listitem_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/selectaccessoriesdialog_listitem_name_horizontalmargin"
+                android:autoSizeMaxTextSize="16sp"
+                android:autoSizeMinTextSize="14sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:gravity="center_vertical"
+                android:text="Example Name"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:ellipsize="end"
+                app:layout_constraintBottom_toTopOf="@id/selectaccessoriesdialog_listitem_address"
+                app:layout_constraintStart_toEndOf="@id/selectaccessoriesdialog_listitem_imageedit"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/selectaccessoriesdialog_listitem_imagebonded"/>
+
+            <TextView
+                android:id="@+id/selectaccessoriesdialog_listitem_address"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/selectaccessoriesdialog_listitem_name_horizontalmargin"
+                android:autoSizeMaxTextSize="14sp"
+                android:autoSizeMinTextSize="12sp"
+                android:autoSizeStepGranularity="2sp"
+                android:autoSizeTextType="uniform"
+                android:text="11:22:33:44:55:66"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/selectaccessoriesdialog_listitem_name"
+                app:layout_constraintStart_toEndOf="@id/selectaccessoriesdialog_listitem_imageedit"
+                app:layout_constraintEnd_toStartOf="@id/selectaccessoriesdialog_listitem_imagebonded"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

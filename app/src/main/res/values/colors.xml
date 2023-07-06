@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF8526</color>
+    <color name="colorPrimaryDark">#FF7000</color>
+    <color name="colorAccent">#03DAC5</color>
+
+            <!--  SPLASH SCREEN COLORS  -->
+    <color name="splash_apptitle_textcolor">#333333</color>
+
+            <!--  APP BUTTONS COLORS  -->
+    <color name="appbutton_stroke">#FF7000</color>
+    <color name="appbutton_background">#FF8526</color>
+    <color name="appbutton_background_gradient1">#FF7000</color>
+    <color name="appbutton_background_gradient2">#FF8526</color>
+    <color name="appbutton_textcolor">#FFFFFF</color>
+    <color name="appbutton_nostroke_textcolor">#FFFFFF</color>
+
+            <!--  SELECT ACCESSORY DIALOGS COLORS  -->
+    <color name="selectaccessorydialogitem_backgroundselected">#CADDFF</color>
+    <color name="selectaccessorydialogitem_backgroundidle">#FFFFFF</color>
+
+            <!--  DISTANCE ALERT SCREEN COLORS  -->
+    <color name="distancealert_separator_background">#466BB0</color>
+
+            <!--  TRACKER SCREEN COLORS  -->
+    <color name="tracker_icon_color">#BCBCBC</color>
+    <color name="tracker_infoframe_color">#F8F8F8</color>
+</resources>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_background"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/editaccessoryaliasdialog_txt_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Title"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editaccessoryaliasdialog_txt_message"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/editaccessoryaliasdialog_txt_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="This is a description text"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toTopOf="@+id/editaccessoryaliasdialog_frame"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editaccessoryaliasdialog_txt_title" />
+
+    <LinearLayout
+        android:id="@id/editaccessoryaliasdialog_frame"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/editaccessoryaliasdialog_buttonframe"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editaccessoryaliasdialog_txt_message">
+
+        <RelativeLayout
+            android:id="@+id/editaccessoryaliasdialog_name_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp">
+
+            <TextView
+                android:id="@+id/editaccessoryaliasdialog_name_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editaccessoryaliasdialog_name_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@id/editaccessoryaliasdialog_name_desc"
+                android:gravity="end"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editaccessoryaliasdialog_mac_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp">
+
+            <TextView
+                android:id="@+id/editaccessoryaliasdialog_mac_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MAC:"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/editaccessoryaliasdialog_mac_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@id/editaccessoryaliasdialog_mac_desc"
+                android:gravity="end"
+                android:textSize="16sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/editaccessoryaliasdialog_alias_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp">
+
+            <TextView
+                android:id="@+id/editaccessoryaliasdialog_alias_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="Alias:"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/editaccessoryaliasdialog_alias_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="40dp"
+                android:layout_toEndOf="@id/editaccessoryaliasdialog_alias_desc"
+                android:gravity="end"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/editaccessoryaliasdialog_buttonframe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editaccessoryaliasdialog_frame">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/editaccessoryaliasdialog_btn_negative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/generic_button_background"
+            android:minHeight="0dp"
+            android:paddingVertical="@dimen/dialogbutton_margin_vertical"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_weight="2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/editaccessoryaliasdialog_btn_positive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@drawable/generic_button_background"
+            android:minHeight="0dp"
+            android:paddingVertical="@dimen/dialogbutton_margin_vertical"
+            android:text="Ok"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

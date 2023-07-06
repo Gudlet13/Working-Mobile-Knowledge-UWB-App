@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/drawerGroupSeparator"
+        android:visible="true"
+        android:checkableBehavior="single" />
+
+    <group
+        android:id="@+id/drawerGroupInfo"
+        android:visible="true"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawerItemAboutUs"
+            android:icon="@drawable/ic_baseline_info"
+            android:title="@string/navmenu_aboutus" />
+    </group>
+
+    <group
+        android:id="@+id/drawerGroupSettings"
+        android:visible="true"
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/drawerItemSettings"
+            android:icon="@drawable/ic_baseline_settings"
+            android:title="@string/navmenu_settings" />
+
+        <item
+            android:id="@+id/drawerItemLogs"
+            android:icon="@drawable/ic_baseline_insert_drive_file"
+            android:title="@string/navmenu_logs" />
+    </group>
+</menu>

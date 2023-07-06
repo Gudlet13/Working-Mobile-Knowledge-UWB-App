@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+            <!--  APP BUTTON GENERAL DIMENSIONS  -->
+    <dimen name="appbutton_strokewidth">2dip</dimen>
+    <dimen name="appbutton_cornerradius">10dip</dimen>
+    <dimen name="appbutton_padding_vertical">15dp</dimen>
+    <dimen name="appbutton_margin_vertical">10dp</dimen>
+    <dimen name="appbutton_margin_horizontal">20dp</dimen>
+
+            <!--  DIALOG BUTTON GENERAL DIMENSIONS  -->
+    <dimen name="dialogbutton_margin_vertical">8dp</dimen>
+
+            <!--  SPLASH SCREEN DIMENSIONS  -->
+    <dimen name="splash_mklogo_height">80dp</dimen>
+    <dimen name="splash_mklogo_marginHorizontal">20dp</dimen>
+    <dimen name="splash_mklogo_marginVertical">10dp</dimen>
+    <dimen name="splash_firamemberlogo_height">80dp</dimen>
+    <dimen name="splash_firamemberlogo_marginHorizontal">20dp</dimen>
+    <dimen name="splash_firamemberlogo_marginVertical">10dp</dimen>
+    <dimen name="splash_kitphoto_marginhorizontal">35dp</dimen>
+    <dimen name="splash_versiontitle_textsize">18sp</dimen>
+    <dimen name="splash_kittitle_marginhorizontal">45dp</dimen>
+    <dimen name="splash_version_marginbottom">15dp</dimen>
+
+            <!--  SELECT DEMO SCREEN DIMENSIONS  -->
+    <dimen name="selectdemo_button_height">100dp</dimen>
+    <dimen name="selectdemo_button_marginhorizontal">20dp</dimen>
+    <dimen name="selectdemo_button_marginvertical">15dp</dimen>
+    <dimen name="selectdemo_button_textsize">20sp</dimen>
+    <dimen name="selectdemo_title_textsize">22sp</dimen>
+
+            <!--  UWB RANGING SCREEN DIMENSIONS  -->
+    <dimen name="uwbranging_listitem_icon_verticalmargin">5dp</dimen>
+    <dimen name="uwbranging_listitem_name_marginhorizontal">10dp</dimen>
+    <dimen name="uwbranging_buttonframe_marginbottom">15dp</dimen>
+    <dimen name="uwbranging_buttonframe_margintop">15dp</dimen>
+    <dimen name="uwbranging_selectaccessory_textsize">18sp</dimen>
+    <dimen name="uwbranging_selectaccessory_marginHorizontal">20dp</dimen>
+    <dimen name="uwbranging_selectaccessory_marginVertical">15dp</dimen>
+    <dimen name="uwbranging_floatingbutton_marginHorizontal">20dp</dimen>
+    <dimen name="uwbranging_floatingbutton_marginVertical">20dp</dimen>
+    <dimen name="uwbranging_selectedaccessory_frameheight">50dp</dimen>
+    <dimen name="uwbranging_selectedaccessory_name_leftmargin">8dp</dimen>
+    <dimen name="uwbranging_selectedaccessory_indicator_rightmargin">15dp</dimen>
+    <dimen name="uwbranging_selectedaccessory_text_marginHorizontal">20dp</dimen>
+    <dimen name="uwbranging_selectedaccessory_text_marginVertical">10dp</dimen>
+    <dimen name="uwbranging_selectedaccessory_text_textsize">22sp</dimen>
+
+            <!--  DISTANCE ALERT SCREEN DIMENSIONS  -->
+    <dimen name="distancealert_listitem_frameheight">60dp</dimen>
+    <dimen name="distancealert_listitem_icon_marginvertical">5dp</dimen>
+    <dimen name="distancealert_listitem_name_marginhorizontal">10dp</dimen>
+    <dimen name="distancealert_listitem_name_marginvertical">10dp</dimen>
+    <dimen name="distancealert_listitem_imageedit_marginvertical">5dp</dimen>
+    <dimen name="distancealert_listitem_imageedit_marginhorizontal">15dp</dimen>
+    <dimen name="distancealert_listitem_distance_marginvertical">5dp</dimen>
+    <dimen name="distancealert_listitem_distance_marginhorizontal">15dp</dimen>
+    <dimen name="distancealert_buttonframe_marginbottom">15dp</dimen>
+    <dimen name="distancealert_buttonframe_margintop">15dp</dimen>
+    <dimen name="distancealert_accessorylistframe_marginH">15dp</dimen>
+    <dimen name="distancealert_separators_horizontalmargin">15dp</dimen>
+    <dimen name="distancealert_textmessage_margintop">15dp</dimen>
+    <dimen name="distancealert_textmessage_marginbottom">10dp</dimen>
+    <dimen name="distancealert_textmessage_marginleft">15dp</dimen>
+    <dimen name="distancealert_farrecycler_margintop">15dp</dimen>
+    <dimen name="distancealert_separator_lineweight">3</dimen>
+    <dimen name="distancealert_separator_textweight">2</dimen>
+
+            <!--  TRACKER SCREEN DIMENSIONS  -->
+    <dimen name="tracker_floatingbutton_size">50dp</dimen>
+    <dimen name="tracker_floatingbutton_marginH">20dp</dimen>
+    <dimen name="tracker_floatingbutton_marginV">20dp</dimen>
+    <dimen name="tracker_infoframe_radius">20dip</dimen>
+    <dimen name="tracker_infoframe_margintop">15dp</dimen>
+    <dimen name="tracker_infoframe_marginhorizontal">15dp</dimen>
+    <dimen name="tracker_infoframe_marginvertical">10dp</dimen>
+    <dimen name="tracker_infoframe_arrowheigth">40dp</dimen>
+    <dimen name="tracker_infoframe_horizontalarrow_margintop">80dp</dimen>
+    <dimen name="tracker_infoframe_horizontalarrow_marginhorizontal">20dp</dimen>
+    <dimen name="tracker_infoframe_verticalarrow_marginvertical">20dp</dimen>
+    <dimen name="tracker_infoframe_info_marginhorizontal">20dp</dimen>
+
+            <!--  TRACKER ARCORE ITEM DIMENSIONS  -->
+    <dimen name="tracker_arcoreitem_frame_paddingHorizontal">10dp</dimen>
+    <dimen name="tracker_arcoreitem_frame_paddingVertical">5dp</dimen>
+    <dimen name="tracker_arcoreitem_image_size">24dp</dimen>
+    <dimen name="tracker_arcoreitem_text_size">12sp</dimen>
+    <dimen name="tracker_arcoreitem_text_maxwidth">120dp</dimen>
+
+            <!--  ABOUT US SCREEN DIMENSIONS  -->
+    <dimen name="aboutus_mklogo_height">80dp</dimen>
+    <dimen name="aboutus_mklogo_marginHorizontal">20dp</dimen>
+    <dimen name="aboutus_mklogo_marginVertical">10dp</dimen>
+    <dimen name="aboutus_firamemberlogo_height">80dp</dimen>
+    <dimen name="aboutus_firamemberlogo_marginHorizontal">20dp</dimen>
+    <dimen name="aboutus_firamemberlogo_marginVertical">10dp</dimen>
+    <dimen name="aboutus_abouttext_marginVertical">10dp</dimen>
+    <dimen name="aboutus_abouttext_marginHorizontal">20dp</dimen>
+    <dimen name="aboutus_buttonframe_marginbottom">15dp</dimen>
+    <dimen name="aboutus_buttonframe_margintop">15dp</dimen>
+    <dimen name="aboutus_aboutlist_marginVertical">20dp</dimen>
+    <dimen name="aboutus_aboutlist_marginHorizontal">20dp</dimen>
+    <dimen name="aboutus_appicon_size">120dp</dimen>
+    <dimen name="aboutus_twitterlogo_size">40dp</dimen>
+    <dimen name="aboutus_linkedinlogo_size">40dp</dimen>
+    <dimen name="aboutus_logo_marginVertical">40dp</dimen>
+
+            <!--  SETTINGS SCREEN DIMENSIONS  -->
+    <dimen name="settings_group_marginVertical">20dp</dimen>
+    <dimen name="settings_group_marginHorizontal">20dp</dimen>
+    <dimen name="settings_group_title_textsize">20sp</dimen>
+    <dimen name="settings_group_option_textsize">18sp</dimen>
+    <dimen name="settings_buttonframe_marginbottom">15dp</dimen>
+    <dimen name="settings_buttonframe_margintop">15dp</dimen>
+    <dimen name="settings_grouptitle_marginbottom">10dp</dimen>
+
+            <!--  LOGS SCREEN DIMENSIONS  -->
+    <dimen name="logs_logs_textSize">11sp</dimen>
+    <dimen name="logs_logs_marginVertical">10dp</dimen>
+    <dimen name="logs_logs_marginHorizontal">20dp</dimen>
+    <dimen name="logs_buttonframe_marginbottom">15dp</dimen>
+    <dimen name="logs_buttonframe_margintop">15dp</dimen>
+
+            <!--  SELECT ACCESSORIES DIALOG DIMENSIONS  -->
+    <dimen name="selectaccessoriesdialog_listitem_frameheight">50dp</dimen>
+    <dimen name="selectaccessoriesdialog_listitem_name_verticalmargin">5dp</dimen>
+    <dimen name="selectaccessoriesdialog_listitem_name_horizontalmargin">15dp</dimen>
+    <dimen name="selectaccessoriesdialog_listitem_imagebonded_verticalmargin">5dp</dimen>
+    <dimen name="selectaccessoriesdialog_listitem_imagebonded_horizontalmargin">15dp</dimen>
+    <dimen name="selectaccessoriesdialog_listitem_imageedit_verticalmargin">5dp</dimen>
+    <dimen name="selectaccessoriesdialog_listitem_imageedit_horizontalmargin">15dp</dimen>
+
+            <!--  NAV VIEW SELECT DEMO HEADER  -->
+    <dimen name="navview_selectdemo_header_image_height">120dp</dimen>
+    <dimen name="navview_selectdemo_header_image_marginhorizontal">20dp</dimen>
+    <dimen name="navview_selectdemo_header_image_marginvertical">20dp</dimen>
+
+            <!--  ABOUTUS ITEM DIMENSIONS  -->
+    <dimen name="aboutus_item_height">50dp</dimen>
+    <dimen name="aboutus_item_verticalmargin">5dp</dimen>
+    <dimen name="aboutus_item_horizontalmargin">15dp</dimen>
+
+            <!--  SETTINGS ITEM DIMENSIONS  -->
+    <dimen name="settings_item_height">50dp</dimen>
+    <dimen name="settings_item_verticalmargin">5dp</dimen>
+    <dimen name="settings_item_horizontalmargin">15dp</dimen>
+
+
+</resources>

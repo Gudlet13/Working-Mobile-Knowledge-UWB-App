@@ -1,0 +1,233 @@
+<resources>
+    <string name="app_name">MK UWB Connect</string>
+    <string name="app_version">Version: %1$s</string>
+
+    <!-- MK & NXP URLs and contacts -->
+    <string name="mk_website">https://www.themobileknowledge.com/</string>
+    <string name="mk_twitter_website">https://twitter.com/mobileknow/</string>
+    <string name="mk_linkedin_website">https://www.linkedin.com/company/mobileknowledge/</string>
+    <string name="nxp_trimension_website">https://www.nxp.com/products/wireless/secure-ultra-wideband-uwb:UWB-TRIMENSION</string>
+    <string name="mk_contact_email">contact@themobileknowledge.com</string>
+    <string name="mk_appstore">market://details?id=com.themobileknowledge.uwbconnectapp</string>
+
+    <!--  SELECT DEMO SCREEN STRINGS  -->
+    <string name="selectdemo_uwbranging_button_string">UWB Ranging</string>
+    <string name="selectdemo_distancealert_button_string">Distance Alert</string>
+    <string name="selectdemo_tracker_button_string">Tracker</string>
+    <string name="selectdemo_pointtrigger_button_string">Point &amp; Trigger</string>
+    <string name="selectdemo_title_string">Select a demo and get started!</string>
+
+    <!--  UWB RANGING SCREEN STRINGS  -->
+    <string name="uwbranging_actionbar_title">UWB ranging</string>
+    <string name="uwbranging_selectaccessory">Click + button to select UWB accessory</string>
+    <string name="uwbranging_selectedaccessory_distanceahead">%1$s is\n%2$d cm\nahead (%3$dº)</string>
+    <string name="uwbranging_selectedaccessory_distancedirection">%1$s is\n%2$d cm\nto your %3$s (%4$dº)</string>
+    <string name="uwbranging_selectedaccessory_distancedirection_right">right</string>
+    <string name="uwbranging_selectedaccessory_distancedirection_left">left</string>
+
+    <!--  DISTANCE ALERT SCREEN STRINGS  -->
+    <string name="distancealert_actionbar_title">Distance alert</string>
+    <string name="distancealert_farrangeseparator_distance">10 m</string>
+    <string name="distancealert_mediumrangeseparator_distance">5 m</string>
+    <string name="distancealert_closerangeseparator_distance">2 m</string>
+
+    <!--  TRACKER SCREEN STRINGS  -->
+    <string name="tracker_actionbar_title">Tracker</string>
+    <string name="tracker_arcoreitem_position_distance">%1$d cm</string>
+    <string name="tracker_arcoreitem_position_distanceandangle">%1$d cm (a: %2$dº, e: %3$dº)</string>
+
+    <!--  ABOUT US SCREEN STRINGS  -->
+    <string name="aboutus_actionbar_title">About us</string>
+    <string name="aboutus_item_app_option">MK UWB Connect</string>
+    <string name="aboutus_item_visitmk_option">Visit MobileKnowledge website</string>
+    <string name="aboutus_item_visitnxptrimension_option">Visit NXP Trimension website</string>
+    <string name="aboutus_item_contactmkemail_option">Contact MobileKnowledge email</string>
+
+    <!--  LOGS SCREEN STRINGS  -->
+    <string name="logs_actionbar_title">Logs</string>
+    <string name="logs_emptylogs">No logs stored</string>
+
+    <!--  SETTINGS SCREEN STRINGS  -->
+    <string name="settings_actionbar_title">Settings</string>
+    <string name="settings_logsgroup_title">Logging settings</string>
+    <string name="settings_logsgroup_logsenabled_option">Enable logs</string>
+    <string name="settings_uwbgroup_title">UWB settings</string>
+    <string name="settings_uwbgroup_uwbchannel_option">UWB Channel</string>
+    <string name="settings_uwbgroup_uwbchannel_value">Channel %1$d</string>
+    <string name="settings_uwbgroup_uwbpreambleindex_option">UWB Preamble Index</string>
+    <string name="settings_uwbgroup_uwbpreambleindex_value">Preamble Index %1$d</string>
+    <string name="settings_uwbgroup_uwbrole_option">Preferred UWB Role</string>
+    <string name="settings_uwbgroup_uwbrole_value">Preferred Role %1$s</string>
+    <string name="settings_uwbgroup_uwbconfigtype_option">Preferred UWB Config Type</string>
+    <string name="settings_uwbgroup_uwbconfigtype_value">Preferred Config Type %1$d</string>
+
+    <!--  DRAWER NAVIGATION MENU  -->
+    <string name="navmenu_aboutus">About us</string>
+    <string name="navmenu_settings">Settings</string>
+    <string name="navmenu_logs">Logs</string>
+
+    <!--  ACTIONBAR MENU LOGS  -->
+    <string name="menulogs_export">Export</string>
+    <string name="menulogs_clear">Clear</string>
+
+    <!--  ACTIONBAR MENU SETTINGS  -->
+    <string name="menulogs_reset">Reset</string>
+
+    <!--  ACTIONBAR MENU DISTANCE ALERT  -->
+    <string name="menulogs_settings">Settings</string>
+
+    <!--  ACTION BAR DRAWER -->
+    <string name="actionbar_drawer_open">Open</string>
+    <string name="actionbar_drawer_close">Close</string>
+
+    <!--  DIALOGS STRINGS  -->
+    <string name="example_title">My Title</string>
+    <string name="example_message">This is the description of the dialog</string>
+    <string name="example_button_text">OK</string>
+    <string name="example_positive_button_text">OK</string>
+    <string name="example_negative_button_text">Cancel</string>
+
+    <string name="confirmclosedemodialog_title">Close demo</string>
+    <string name="confirmclosedemodialog_message">The ongoing UWB ranging session will be stopped if you close the demo</string>
+    <string name="confirmclosedemodialog_positive_button_text">Confirm</string>
+    <string name="confirmclosedemodialog_negative_button_text">Cancel</string>
+
+    <string name="selectaccessoriesdialog_title">Select UWB accessories</string>
+    <string name="selectaccessoriesdialog_message">Please select the UWB accessories you want to track</string>
+    <string name="selectaccessoriesdialog_positive_button_text">Select</string>
+    <string name="selectaccessoriesdialog_negative_button_text">Cancel</string>
+
+    <string name="selectsettingsdialog_uwbchannel_title">Select UWB Channel</string>
+    <string name="selectsettingsdialog_uwbchannel_message">Please select the UWB Channel you want to use</string>
+    <string name="selectsettingsdialog_uwbchannel_positive_button_text">Select</string>
+    <string name="selectsettingsdialog_uwbchannel_negative_button_text">Cancel</string>
+
+    <string name="selectsettingsdialog_uwbpreambleindex_title">Select UWB Preamble Index</string>
+    <string name="selectsettingsdialog_uwbpreambleindex_message">Please select the UWB Preamble Index you want to use</string>
+    <string name="selectsettingsdialog_uwbpreambleindex_positive_button_text">Select</string>
+    <string name="selectsettingsdialog_uwbpreambleindex_negative_button_text">Cancel</string>
+
+    <string name="selectsettingsdialog_uwbrole_title">Select preferred UWB Role</string>
+    <string name="selectsettingsdialog_uwbrole_message">Please select the preferred UWB Role you want to use</string>
+    <string name="selectsettingsdialog_uwbrole_positive_button_text">Select</string>
+    <string name="selectsettingsdialog_uwbrole_negative_button_text">Cancel</string>
+
+    <string name="selectsettingsdialog_uwbconfigtype_title">Select preferred UWB Config Type</string>
+    <string name="selectsettingsdialog_uwbconfigtype_message">Please select the preferred UWB Config Type you want to use</string>
+    <string name="selectsettingsdialog_uwbconfigtype_positive_button_text">Select</string>
+    <string name="selectsettingsdialog_uwbconfigtype_negative_button_text">Cancel</string>
+
+    <string name="editaccessorynamedialog_title">Edit UWB accessory alias</string>
+    <string name="editaccessorynamedialog_message">Indicate the alias to be used for this UWB accessory</string>
+    <string name="editaccessorynamedialog_positive_button_text">Edit</string>
+    <string name="editaccessorynamedialog_negative_button_text">Cancel</string>
+
+    <string name="pairinginfodialog_title">Pairing info</string>
+    <string name="pairinginfodialog_message">Please use \'999999\' value to pair to not already paired accessories.</string>
+    <string name="pairinginfodialog_positive_button_text">Accept</string>
+
+    <string name="noaccessoryselecteddialog_title">Warning</string>
+    <string name="noaccessoryselecteddialog_message">No accessories are being tracked. Please add accessories using the + button.</string>
+    <string name="noaccessoryselecteddialog_positive_button_text">OK</string>
+
+    <string name="requiredpermissionsmissingdialog_title">Error</string>
+    <string name="requiredpermissionsmissingdialog_message">Required permissions are missing. Please grant all requested permissions and run the demo again</string>
+    <string name="requiredpermissionsmissingdialog_positive_button_text">OK</string>
+
+    <string name="permissionsdeclineddialog_title">Error</string>
+    <string name="permissionsdeclineddialog_message">Permissions are required and the different demos might be affected.</string>
+    <string name="permissionsdeclineddialog_positive_button_text">OK</string>
+
+    <string name="connectionlostdialog_title">Error</string>
+    <string name="connectionlostdialog_message">The connection with the UWB accessory was lost!</string>
+    <string name="connectionlostdialog_positive_button_text">OK</string>
+
+    <string name="permissionsdeclineddonttaskagaindialog_title">Error</string>
+    <string name="permissionsdeclineddonttaskagaindialog_message">Permissions are required and the different demos might be affected. Please grant required permissions to the app from the settings options.</string>
+    <string name="permissionsdeclineddonttaskagaindialog_positive_button_text">OK</string>
+
+    <string name="settingsresettodefaultdialog_title">Reset settings</string>
+    <string name="settingsresettodefaultdialog_message">User defined settings will be reset and moved back to default settings.</string>
+    <string name="settingsresettodefaultdialog_positive_button_text">Reset</string>
+    <string name="settingsresettodefaultdialog_negative_button_text">Cancel</string>
+
+    <string name="logscleardialog_title">Clear logs</string>
+    <string name="logscleardialog_message">All saved logs will be cleared. Cleared logs cannot be restored.</string>
+    <string name="logscleardialog_positive_button_text">Clear</string>
+    <string name="logscleardialog_negative_button_text">Cancel</string>
+
+    <string name="exportlogsdialog_title">Export logs</string>
+    <string name="exportlogsdialog_message">Select desired format(s) to export saved logs. File(s) will be created in your phone\'s Downloads folder.</string>
+    <string name="exportlogsdialog_positive_button_text">Export</string>
+    <string name="exportlogsdialog_negative_button_text">Cancel</string>
+    <string name="exportlogsdialog_format_csv">CSV format</string>
+    <string name="exportlogsdialog_format_txt">TXT format</string>
+
+    <string name="bluetoothnotsupporteddialog_title">Error</string>
+    <string name="bluetoothnotsupporteddialog_message">Bluetooth technology is not supported in this device. The selected demo cannot be executed.</string>
+    <string name="bluetoothnotsupporteddialog_positive_button_text">OK</string>
+
+    <string name="uwbnotsupporteddialog_title">Error</string>
+    <string name="uwbnotsupporteddialog_message">UWB technology is not supported in this device. The selected demo cannot be executed.</string>
+    <string name="uwbnotsupporteddialog_positive_button_text">OK</string>
+
+    <string name="locationnotsupporteddialog_title">Error</string>
+    <string name="locationnotsupporteddialog_message">Location technology is not supported in this device. The selected demo cannot be executed.</string>
+    <string name="locationnotsupporteddialog_positive_button_text">OK</string>
+
+    <string name="bluetoothnotenableddialog_title">Error</string>
+    <string name="bluetoothnotenableddialog_message">Bluetooth technology is not enabled. Please enable Bluetooth and run the demo again.</string>
+    <string name="bluetoothnotenableddialog_positive_button_text">Enable</string>
+    <string name="bluetoothnotenableddialog_negative_button_text">Cancel</string>
+
+    <string name="uwbnotenableddialog_title">Error</string>
+    <string name="uwbnotenableddialog_message">UWB is not enabled. Please enable UWB and run the demo again.</string>
+    <string name="uwbnotenableddialog_positive_button_text">Enable</string>
+    <string name="uwbnotenableddialog_negative_button_text">Cancel</string>
+
+    <string name="locationnotenableddialog_title">Error</string>
+    <string name="locationnotenableddialog_message">Location is not enabled. Please enable location and run the demo again.</string>
+    <string name="locationnotenableddialog_positive_button_text">Enable</string>
+    <string name="locationnotenableddialog_negative_button_text">Cancel</string>
+
+    <string name="camerapermissiondeclineddialog_title">Error</string>
+    <string name="camerapermissiondeclineddialog_message">Camera permission is required to enable AR mode in Tracker demo. Tracker demo cannot be run.</string>
+    <string name="camerapermissiondeclineddialog_positive_button_text">OK</string>
+
+    <string name="camerapermissiondeclineddonttaskagaindialog_title">Error</string>
+    <string name="camerapermissiondeclineddonttaskagaindialog_message">Camera permission is required to initialize AR mode in Tracker demo. Tracker demo cannot be run. Please grant required Camera permission to the app from the settings options.</string>
+    <string name="camerapermissiondeclineddonttaskagaindialog_positive_button_text">OK</string>
+
+    <string name="editdistancealertthresholdsdialog_title">Edit thresholds</string>
+    <string name="editdistancealertthresholdsdialog_message">Edit distance alert thresholds</string>
+    <string name="editdistancealertthresholdsdialog_positive_button_text">Edit</string>
+    <string name="editdistancealertthresholdsdialog_negative_button_text">Cancel</string>
+    <string name="editdistancealertthresholdsdialog_closerange">Close range threshold (cm):</string>
+    <string name="editdistancealertthresholdsdialog_farrange">Far range threshold (cm):</string>
+
+    <string name="arcorenotsupporteddialog_title">Error</string>
+    <string name="arcorenotsupporteddialog_message">Google ARCore is not supported in this device. Hence, tracker demo cannot be run</string>
+    <string name="arcorenotsupporteddialog_positive_button_text">Accept</string>
+
+    <string name="distancenotsupporteddialog_title">Error</string>
+    <string name="distancenotsupporteddialog_message">The UWB Ranging capabilities of this device do not support distance measurements. Hence the tracker demo cannot be run on this device.</string>
+    <string name="distancenotsupporteddialog_positive_button_text">OK</string>
+
+    <string name="directionnotsupporteddialog_title">Error</string>
+    <string name="directionnotsupporteddialog_message">The UWB Ranging capabilities of this device do not support angle of arrival. Hence the tracker demo cannot be run on this device.</string>
+    <string name="directionnotsupporteddialog_positive_button_text">OK</string>
+
+    <string name="azimuthnotsupporteddialog_title">Error</string>
+    <string name="azimuthnotsupporteddialog_message">The UWB Ranging capabilities of this device do not support azimuth angle of arrival. Hence the tracker demo cannot be run on this device.</string>
+    <string name="azimuthnotsupporteddialog_positive_button_text">OK</string>
+
+    <string name="elevationnotsupporteddialog_title">Warning</string>
+    <string name="elevationnotsupporteddialog_message">The UWB Ranging capabilities of this device do not support elevation angle of arrival. Hence the tracker demo will not be able to locate UWB devices on the vertical axis</string>
+    <string name="elevationnotsupporteddialog_positive_button_text">OK</string>
+
+    <string name="multiplesessionsnotsupporteddialog_title">Warning</string>
+    <string name="multiplesessionsnotsupporteddialog_message">Due to limitations in current "rxjava3:1.0.0-alpha04" UWB Core Jetpack library, the multiple ranging sessions in parallel feature is not supported by the MK UWB Connect application. The application will be updated as soon as the identified issue is fixed.</string>
+    <string name="multiplesessionsnotsupporteddialog_positive_button_text">OK</string>
+
+    <string name="infodonotshowagaindialog_donotshowagain_text">Do not show again</string>
+</resources>

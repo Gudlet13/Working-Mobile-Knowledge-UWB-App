@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/splash_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:paddingHorizontal="@dimen/splash_kitphoto_marginhorizontal"
+        android:src="@drawable/splash_uwbconnectedlogo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_marginHorizontal="@dimen/splash_kittitle_marginhorizontal"
+        android:src="@drawable/splash_uwbconnecttext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/splash_image"/>
+
+    <ImageView
+        android:id="@+id/splash_mklogo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/splash_mklogo_height"
+        android:layout_marginHorizontal="@dimen/splash_mklogo_marginHorizontal"
+        android:layout_marginVertical="@dimen/splash_mklogo_marginVertical"
+        android:adjustViewBounds="true"
+        android:src="@drawable/mk_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/splash_firamemberlogo"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/splash_firamemberlogo_height"
+        android:layout_marginHorizontal="@dimen/splash_firamemberlogo_marginHorizontal"
+        android:layout_marginVertical="@dimen/splash_firamemberlogo_marginVertical"
+        android:adjustViewBounds="true"
+        android:src="@drawable/firamember_logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

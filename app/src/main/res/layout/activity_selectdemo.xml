@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/selectdemo_drawerlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/selectdemo_title_string"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/selectdemo_title_textsize"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/selectdemo_buttons_frame"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/selectdemo_buttons_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/selectdemo_uwbranging_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectdemo_button_height"
+                android:layout_marginHorizontal="@dimen/selectdemo_button_marginhorizontal"
+                android:layout_marginVertical="@dimen/selectdemo_button_marginvertical"
+                android:background="@drawable/mainscreen_button_background">
+
+                <ImageView
+                    android:id="@+id/selectdemo_uwbranging_button_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="25dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_uwbranging"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/selectdemo_uwbranging_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selectdemo_uwbranging_button_string"
+                    android:textColor="@color/appbutton_textcolor"
+                    android:textSize="@dimen/selectdemo_button_textsize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/selectdemo_uwbranging_button_image"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/selectdemo_distance_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectdemo_button_height"
+                android:layout_marginHorizontal="@dimen/selectdemo_button_marginhorizontal"
+                android:layout_marginVertical="@dimen/selectdemo_button_marginvertical"
+                android:background="@drawable/mainscreen_button_background">
+
+                <ImageView
+                    android:id="@+id/selectdemo_distance_button_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="25dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_distance"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/selectdemo_distance_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selectdemo_distancealert_button_string"
+                    android:textColor="@color/appbutton_textcolor"
+                    android:textSize="@dimen/selectdemo_button_textsize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/selectdemo_distance_button_image"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/selectdemo_tracker_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectdemo_button_height"
+                android:layout_marginHorizontal="@dimen/selectdemo_button_marginhorizontal"
+                android:layout_marginVertical="@dimen/selectdemo_button_marginvertical"
+                android:background="@drawable/mainscreen_button_background">
+
+                <ImageView
+                    android:id="@+id/selectdemo_tracker_button_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="25dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_tracker"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/selectdemo_tracker_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selectdemo_tracker_button_string"
+                    android:textColor="@color/appbutton_textcolor"
+                    android:textSize="@dimen/selectdemo_button_textsize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/selectdemo_tracker_button_image"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/selectdemo_pointtrigger_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/selectdemo_button_height"
+                android:layout_marginHorizontal="@dimen/selectdemo_button_marginhorizontal"
+                android:layout_marginVertical="@dimen/selectdemo_button_marginvertical"
+                android:alpha="0.4"
+                android:background="@drawable/mainscreen_button_background">
+
+                <ImageView
+                    android:id="@+id/selectdemo_pointtrigger_button_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="25dp"
+                    android:layout_marginVertical="25dp"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_pointandtrigger"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/selectdemo_pointtrigger_button_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/selectdemo_pointtrigger_button_string"
+                    android:textColor="@color/appbutton_textcolor"
+                    android:textSize="@dimen/selectdemo_button_textsize"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/selectdemo_pointtrigger_button_image"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/selectdemo_navigationView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="false"
+        app:headerLayout="@layout/navigationview_selectdemo_header"
+        app:menu="@menu/menu_drawer" />
+
+</androidx.drawerlayout.widget.DrawerLayout>

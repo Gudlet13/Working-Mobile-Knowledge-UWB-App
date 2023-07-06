@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tracker_infoframe_background"
+    android:paddingHorizontal="@dimen/tracker_arcoreitem_frame_paddingHorizontal"
+    android:paddingVertical="@dimen/tracker_arcoreitem_frame_paddingVertical">
+
+    <ImageView
+        android:id="@+id/tracker_arcoreitem_image"
+        android:layout_width="@dimen/tracker_arcoreitem_image_size"
+        android:layout_height="@dimen/tracker_arcoreitem_image_size"
+        android:layout_centerVertical="true"
+        android:adjustViewBounds="false"
+        android:src="@drawable/ic_tracker_visible" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/tracker_arcoreitem_frame_paddingHorizontal"
+        android:layout_toEndOf="@id/tracker_arcoreitem_image"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tracker_arcoreitem_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/tracker_arcoreitem_text_maxwidth"
+            android:maxLines="1"
+            android:text="MK UWB SR150 Anchor"
+            android:textColor="@color/tracker_infoframe_color"
+            android:textSize="@dimen/tracker_arcoreitem_text_size" />
+
+        <TextView
+            android:id="@+id/tracker_arcoreitem_position"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxWidth="@dimen/tracker_arcoreitem_text_maxwidth"
+            android:maxLines="1"
+            android:text="200 cm"
+            android:textColor="@color/tracker_infoframe_color"
+            android:textSize="@dimen/tracker_arcoreitem_text_size" />
+    </LinearLayout>
+</RelativeLayout>
