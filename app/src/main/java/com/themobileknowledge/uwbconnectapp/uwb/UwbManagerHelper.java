@@ -202,11 +202,7 @@ public class UwbManagerHelper {
 
         if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.UWB_RANGING) == PackageManager.PERMISSION_GRANTED) {
             Thread t = new Thread(() -> {
-                UwbComplexChannel uwbComplexChannel;
-                UwbControllerSessionScope uwbControllerSessionScope=null;
-                UwbControleeSessionScope uwbControleeSessionScope=null;
-                UwbAddress localAddress;
-                Flowable<RangingResult> flowable;
+
                 byte uwbDeviceRangingRole = selectUwbDeviceRangingRole(uwbDeviceConfigData.getSupportedDeviceRangingRoles());
                 Log.d(TAG, "Uwb device supported ranging roles: " + uwbDeviceConfigData.getSupportedDeviceRangingRoles() + ", selected role for UWB device: " + uwbDeviceRangingRole);
 
@@ -214,6 +210,11 @@ public class UwbManagerHelper {
                 Log.d(TAG, "Uwb device supported UWB profile IDs: " + uwbDeviceConfigData.getSupportedUwbProfileIds() + ", selected UWB profile ID: " + uwbProfileId);
 
                 try {
+                    UwbAddress localAddress;
+                    UwbComplexChannel uwbComplexChannel;
+                    UwbControleeSessionScope uwbControleeSessionScope = null;
+                    UwbControllerSessionScope uwbControllerSessionScope = null;
+
                     if (uwbDeviceRangingRole == CONTROLLER_ROLE) {
                         Log.d(TAG, "Android device will act as Controlee!");
                         Single<UwbControleeSessionScope> controleeSessionScopeSingle = UwbManagerRx.controleeSessionScopeSingle(mUwbManager);
@@ -236,58 +237,77 @@ public class UwbManagerHelper {
                     int sessionId = new Random().nextInt();
 
                     // Remote UWB device
-//                    UwbAddress uwbAddress2 = new UwbAddress(uwbDeviceConfigData.getDeviceMacAddress());
-                    UwbAddress uwbAddress2 = new UwbAddress(Utils.revert(uwbDeviceConfigData.getDeviceMacAddress()));
-                    UwbDevice uwbDevice = new UwbDevice(uwbAddress2);
+                    UwbAddress uwbAddress = new UwbAddress(uwbDeviceConfigData.getDeviceMacAddress());
+//                    UwbAddress uwbAddress = new UwbAddress(Utils.revert(uwbDeviceConfigData.getDeviceMacAddress()));
+                    UwbDevice uwbDevice = new UwbDevice(uwbAddress);
                     List<UwbDevice> listUwbDevices = new ArrayList<>();
                     listUwbDevices.add(uwbDevice);
 
+                    // Logs for debugging
                     Log.d(TAG, "UWB SessionId: " + sessionId);
                     Log.d(TAG, "UWB Local Address: " + localAddress);
                     Log.d(TAG, "UWB Remote Address: " + uwbDevice);
                     Log.d(TAG, "UWB Channel: " + uwbComplexChannel.getChannel());
                     Log.d(TAG, "UWB Preamble Index: " + uwbComplexChannel.getPreambleIndex());
-                    byte[] hexStringtoByteArray = Utils.hexStringtoByteArray("0807010203040506");
+
                     Log.d(TAG, "Configure ranging parameters for Profile ID: " + uwbProfileId);
+
+                    byte[] hexStringtoByteArray = Utils.hexStringtoByteArray("0807010203040506");
                     RangingParameters rangingParameters = new RangingParameters(
                             uwbProfileId,
                             sessionId,
-                            null,
+                            hexStringtoByteArray,
                             uwbComplexChannel,
                             listUwbDevices,
                             RangingParameters.RANGING_UPDATE_RATE_FREQUENT
                     );
 
-                    if (uwbDeviceRangingRole == 0) {
+                    Flowable<RangingResult> rangingResultFlowable;
+                    if (uwbDeviceRangingRole == CONTROLLER_ROLE) {
                         Log.d(TAG, "Configure controlee flowable");
-                        flowable = UwbClientSessionScopeRx.rangingResultsFlowable(uwbControleeSessionScope, rangingParameters);
+                        rangingResultFlowable =
+                                UwbClientSessionScopeRx.rangingResultsFlowable(uwbControleeSessionScope,
+                                        rangingParameters);
                     } else {
                         Log.d(TAG, "Configure controller flowable");
-                        flowable = UwbClientSessionScopeRx.rangingResultsFlowable(uwbControllerSessionScope, rangingParameters);
+                        rangingResultFlowable =
+                                UwbClientSessionScopeRx.rangingResultsFlowable(uwbControllerSessionScope,
+                                        rangingParameters);
                     }
-                    this.mUwbRemoteDeviceList.put(remoteAddress, new UwbRemoteDevice(uwbDevice, (Disposable) flowable.delay(100L, TimeUnit.MILLISECONDS).subscribeWith(new DisposableSubscriber<RangingResult>() { // from class: com.themobileknowledge.uwbconnectapp.uwb.UwbManagerHelper.1
-                        @Override // io.reactivex.rxjava3.subscribers.DisposableSubscriber
-                        public void onStart() {
-                            request(1L);
-                        }
-                        public void onNext(RangingResult rangingResult) {
-                            String addressFromUwbDevice = UwbManagerHelper.this.getAddressFromUwbDevice(rangingResult.getDevice());
-                            if (addressFromUwbDevice != null) {
-                                UwbManagerHelper.this.onRangingResult(addressFromUwbDevice, rangingResult);
-                            }
-                            request(1L);
-                        }
-                        @Override // org.reactivestreams.Subscriber
-                        public void onError(Throwable th) {
-                            System.err.println("UwbManagerHelper: Error on RangingResultsFlowable: " + th.getMessage());
-                            th.printStackTrace();
-                            UwbManagerHelper.this.onRangingError(th);
-                        }
-                        @Override // org.reactivestreams.Subscriber
-                        public void onComplete() {
-                            UwbManagerHelper.this.onRangingComplete();
-                        }
-                    })));
+
+                    // Consume ranging results from Flowable using Disposable
+                    Disposable disposable = rangingResultFlowable
+                            .delay(100, TimeUnit.MILLISECONDS)
+                            .subscribeWith(new DisposableSubscriber<RangingResult>() {
+                                @Override
+                                public void onStart() {
+                                    request(1);
+                                }
+
+                                @Override
+                                public void onNext(RangingResult rangingResult) {
+                                    String address = getAddressFromUwbDevice(rangingResult.getDevice());
+                                    if (address != null) {
+                                        onRangingResult(address, rangingResult);
+                                    }
+
+                                    request(1);
+                                }
+
+                                @Override
+                                public void onError(Throwable error) {
+                                    onRangingError(error);
+                                }
+
+                                @Override
+                                public void onComplete() {
+                                    onRangingComplete();
+                                }
+                            });
+
+                    // Add the new device to the list, use Bluetooth LE address as key
+                    UwbRemoteDevice uwbRemoteDevice = new UwbRemoteDevice(uwbDevice, disposable);
+                    mUwbRemoteDeviceList.put(remoteAddress, uwbRemoteDevice);
 
                     // Create ShareableData with configured UWB Session params
                     UwbPhoneConfigData uwbPhoneConfigData = new UwbPhoneConfigData();
@@ -298,8 +318,8 @@ public class UwbManagerHelper {
                     uwbPhoneConfigData.setChannel((byte) uwbComplexChannel.getChannel());
                     uwbPhoneConfigData.setProfileId(uwbProfileId);
                     uwbPhoneConfigData.setDeviceRangingRole((byte) (1 << uwbDeviceRangingRole));
-//                    uwbPhoneConfigData.setPhoneMacAddress(localAddress.getAddress());
-                    uwbPhoneConfigData.setPhoneMacAddress(Utils.revert(localAddress.getAddress()));
+//                    uwbPhoneConfigData.setPhoneMacAddress(Utils.revert(localAddress.getAddress()));
+                    uwbPhoneConfigData.setPhoneMacAddress(localAddress.getAddress());
 
                     // Send the UWB ranging session configuration data back to the listener
                     onRangingStarted(remoteAddress, uwbPhoneConfigData);
@@ -316,6 +336,7 @@ public class UwbManagerHelper {
             return false;
         }
     }
+
 
     /**
      * Stops an UWB ranging session
