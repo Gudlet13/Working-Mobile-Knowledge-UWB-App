@@ -460,6 +460,16 @@ public class ARCoreHelper extends BaseObservable<ARCoreHelper.Listener> implemen
         backgroundRenderer.drawVirtualScene(render, virtualSceneFramebuffer, Z_NEAR, Z_FAR);
     }
 
+    private float average_if_not_0(float a, float b) {
+        if (a == 0) {
+            return b;
+        } else if (b == 0) {
+            return a;
+        } else {
+            return (a + b) / 2;
+        }
+    }
+
     public void updateARCorePositionAccessory(Accessory accessory, Position position) {
         Log.d(TAG, "Accessory: " + accessory.getMac() + ", position update received");
 
@@ -471,7 +481,20 @@ public class ARCoreHelper extends BaseObservable<ARCoreHelper.Listener> implemen
             Anchor newAnchor = null;
 
             // Ignore very high value angles which are usually not reliable enough
-            if (azimuth > -60 && azimuth < 60 && elevation > -60 && elevation < 60) {
+            if (azimuth > -70 && azimuth < 70 && elevation > -70 && elevation < 70) {
+
+                AnchorRemoteDevice anchorRemoteDevice = mAnchorRemoteDevices.get(accessory.getMac());
+                if (anchorRemoteDevice != null) {
+
+                    float old_distance = anchorRemoteDevice.getPosition().getDistance();
+                    float old_azimuth = anchorRemoteDevice.getPosition().getAzimuth();
+                    float old_elevation = anchorRemoteDevice.getPosition().getElevation();
+
+                    distance = average_if_not_0(old_distance, distance);
+                    azimuth = average_if_not_0(old_azimuth, azimuth);
+                    elevation = average_if_not_0(old_elevation, elevation);
+                }
+
                 Pose newPose = createPoseFromUwbPosition(distance, azimuth, elevation);
                 newAnchor = mSession.createAnchor(
                         mFrame.getCamera().getDisplayOrientedPose()
