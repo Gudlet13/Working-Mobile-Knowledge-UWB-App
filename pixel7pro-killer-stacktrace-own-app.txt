@@ -1,0 +1,332 @@
+2023-07-11 10:54:20.037   822-822   WifiHAL                 ven...e.wifi_ext@1.0-service-vendor  I  Creating message to get link statistics; iface = 47
+2023-07-11 10:54:20.155   822-822   WifiHAL                 ven...e.wifi_ext@1.0-service-vendor  I  In GetLinkStatsCommand::handleResponse
+2023-07-11 10:54:20.224 21073-21209 ConnectivityService     system_server                        D  NetReassign [no changes] [c 1] [a 1] [i 26]
+2023-07-11 10:54:20.649 21073-21268 UwbSessionManager       system_server                        W  Continuous errors or no ranging results detected for 30 seconds. Stopping session
+2023-07-11 10:54:20.650 21073-21268 UwbSessionManager       system_server                        I  stopRanging() - sessionId: 12345, sessionHandle: SessionHandle [id=1, package-name: com.google.android.gms, uid: 10159, pid: 21902]
+2023-07-11 10:54:20.668 21073-27129 uwb                     system_server                        D  uwb_uci_jni_rust::uci_jni_android_new: Java_com_android_server_uwb_jni_NativeUwbManager_nativeRangingStop: enter
+2023-07-11 10:54:20.668 21073-22147 uwb                     system_server                        D  uwb_core::uci::uci_manager: Received cmd: SendUciCommand { cmd: RangeStop { session_id: 12345 } }
+2023-07-11 10:54:20.675   816-816   qorvo.uwb....ckend_fira android.hardware.qorvo.uwb.service   I  uci_backend_fira_ranging_stop: MT/GID/OID 4201 CMD
+2023-07-11 10:54:20.675   816-816   qorvo.uwb.fira_helper   android.hardware.qorvo.uwb.service   I  call_fira: call_id 10 session_id 12345
+2023-07-11 10:54:20.675   816-816   qorvo.uwb.uwbmac        android.hardware.qorvo.uwb.service   I  report_nl_cb
+2023-07-11 10:54:20.676   816-816   qorvo.uwb.uwbmac        android.hardware.qorvo.uwb.service   I  ack_handler
+2023-07-11 10:54:20.676   816-816   qorvo.uwb.fira_helper   android.hardware.qorvo.uwb.service   I  call_fira: call_id 3 session_id 12345
+2023-07-11 10:54:20.676   816-816   qorvo.uwb.uwbmac        android.hardware.qorvo.uwb.service   I  ack_handler
+2023-07-11 10:54:20.676   816-816   qorvo.uwb....ckend_fira android.hardware.qorvo.uwb.service   I  uci_backend_fira_ranging_stop: MT/GID/OID 4201 RSP 0
+2023-07-11 10:54:20.676 21073-21348 TrafficStats            system_server                        D  tagSocket(194) with statsTag=0xffffff41, statsUid=-1
+2023-07-11 10:54:20.680 22812-22812 BgTaskExecutorImpl      com...d.googlequicksearchbox:search  I  (REDACTED) Starting %s background task %s.
+2023-07-11 10:54:20.740 22812-23107 A                       com...d.googlequicksearchbox:search  I  getLocaleToModelSpecsMap
+2023-07-11 10:54:20.741 22812-23107 A                       com...d.googlequicksearchbox:search  I  Fetching latest config from MDD...
+2023-07-11 10:54:20.741 22812-23107 A                       com...d.googlequicksearchbox:search  I  (REDACTED) Found map of size: %d
+2023-07-11 10:54:20.742 22812-23107 A                       com...d.googlequicksearchbox:search  I  (REDACTED) Adding from proto config to map [configKey: %s locale: %s modelType: %s modelPrefix: %s Location: %s isSpeakerIdSupported: %b]
+2023-07-11 10:54:20.742 22812-23107 A                       com...d.googlequicksearchbox:search  I  (REDACTED) Adding from proto config to map [configKey: %s locale: %s modelType: %s modelPrefix: %s Location: %s isSpeakerIdSupported: %b]
+2023-07-11 10:54:20.743 22812-23107 A                       com...d.googlequicksearchbox:search  I  (REDACTED) Adding from proto config to map [configKey: %s locale: %s modelType: %s modelPrefix: %s Location: %s isSpeakerIdSupported: %b]
+2023-07-11 10:54:20.753 22812-23107 MicroDetectionState     com...d.googlequicksearchbox:search  I  (REDACTED) #takeChangeMicroDetectorMode [mIsBargeInEnabled: %b, mCurrentDetectionMode: %s]
+2023-07-11 10:54:20.755 22812-23107 MicroDetectionState     com...d.googlequicksearchbox:search  I  (REDACTED) Should stop hotword detection immediately - %b
+2023-07-11 10:54:20.757 21073-21139 JobScheduler            system_server                        W  Job didn't exist in JobStore: a85d738 #u0a160/-385 com.google.android.googlequicksearchbox/com.google.android.apps.gsa.tasks.BackgroundTasksJobService
+2023-07-11 10:54:21.670 22310-22455 TrafficStats            com.google.android.gms               D  tagSocket(5) with statsTag=0x30000408, statsUid=-1
+2023-07-11 10:54:22.235  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  VIRTUAL-SKIN-CPU:35.5839 raw data: VIRTUAL-GNSS-DISP:35583.9 VIRTUAL-NEUTRAL-QUIET:34491 VIRTUAL-QUIET-USB2:32858.1 VIRTUAL-SKIN-CPU:35583.9 VIRTUAL-USB2-QUIET:32971.5 disp_therm:34911 gnss_tcxo_therm:36847 neutral_therm:36647 quiet_therm:33909 usb_pwr_therm2:35400 
+2023-07-11 10:54:22.255  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  VIRTUAL-SKIN-CPU power_budget=2400 err=7.41612 s_power=1200 time_elapsed_ms=7024 p=1483.22 i=0 d=0 budget transient=0 control target=2
+2023-07-11 10:54:22.255  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  VIRTUAL-SKIN-CPU binded power rails: (S4M_VDD_CPUCL0: 51.41 mW)(S2M_VDD_CPUCL2: 6.64 mW)(S3M_VDD_CPUCL1: 27.14 mW)
+2023-07-11 10:54:22.255  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  VIRTUAL-SKIN:35.5839 raw data: VIRTUAL-GNSS-DISP:35583.9 VIRTUAL-NEUTRAL-QUIET:34491 VIRTUAL-QUIET-USB2:32858.1 VIRTUAL-SKIN:35583.9 VIRTUAL-USB2-QUIET:32971.5 
+2023-07-11 10:54:22.256  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  VIRTUAL-SKIN-CHARGE:34.9576 raw data: VIRTUAL-SKIN-CHARGE:34957.6 qi_therm:38762 quiet_therm:33909 
+2023-07-11 10:54:22.256  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  quiet_therm:33.909 raw data: quiet_therm:33909 
+2023-07-11 10:54:22.256  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  VIRTUAL-SKIN-GPU:35.5839 raw data: VIRTUAL-GNSS-DISP:35583.9 VIRTUAL-NEUTRAL-QUIET:34491 VIRTUAL-QUIET-USB2:32858.1 VIRTUAL-SKIN-GPU:35583.9 VIRTUAL-USB2-QUIET:32971.5 
+2023-07-11 10:54:22.256  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  VIRTUAL-SKIN-GPU power_budget=2100 err=7.41612 s_power=1500 time_elapsed_ms=7024 p=741.612 i=0 d=0 budget transient=0 control target=2
+2023-07-11 10:54:22.256  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  VIRTUAL-SKIN-GPU binded power rails: (S2S_VDD_G3D: 4.19 mW)
+2023-07-11 10:54:22.256  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  cellular-emergency:35.5839 raw data: VIRTUAL-GNSS-DISP:35583.9 VIRTUAL-NEUTRAL-QUIET:34491 VIRTUAL-QUIET-USB2:32858.1 VIRTUAL-USB2-QUIET:32971.5 cellular-emergency:35583.9 
+2023-07-11 10:54:22.257  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  VIRTUAL-SKIN-HINT:35.5839 raw data: VIRTUAL-GNSS-DISP:35583.9 VIRTUAL-NEUTRAL-QUIET:34491 VIRTUAL-QUIET-USB2:32858.1 VIRTUAL-SKIN-HINT:35583.9 VIRTUAL-USB2-QUIET:32971.5 
+2023-07-11 10:54:22.541   969-969   AOC                     aocd                                 D  A3:MSG: vsc_controller.cc, 537: VSC: [Significant Motion] requestSensorEvents: sensor 0x20002, period=18446744073709 la
+2023-07-11 10:54:22.541   969-969   AOC                     aocd                                 D  A3:MSG: usf_sensor.cc, 1368: USF: Received start sampling request for LSM6DSV Motion Detect.
+2023-07-11 10:54:22.541   969-969   AOC                     aocd                                 D  A3:MSG: vsc_controller.cc, 555: VSC: [Significant Motion] stopSensorEvents: sensor 0x10001
+2023-07-11 10:54:22.542   969-969   AOC                     aocd                                 D  A3:MSG: usf_sensor.cc, 1883: USF: Received reconfig sampling request for LSM6DSV Accelerometer.
+2023-07-11 10:54:22.542   969-969   AOC                     aocd                                 D  A3:MSG: lsm6dsv_device.cc, 734: USF: Lsm6dsvDevice: Sensor 0: Enabled 1, odr_index 5, period_ns 20000000.
+2023-07-11 10:54:22.542   969-969   AOC                     aocd                                 D  A3:MSG: lsm6dsv_fifo.cc, 752: USF: Lsm6dsvFifo: ODR: XL/G/T/TS: 60/60/15/7 WM: 4 Intr: 36.
+2023-07-11 10:54:22.542   969-969   AOC                     aocd                                 D  A3:MSG: lsm6dsv_device.cc, 643: USF: Lsm6dsvDevice: Fifo was disabled for 540487ns.
+2023-07-11 10:54:22.771 21073-21102 OomAdjuster             system_server                        D  Not killing cached processes
+2023-07-11 10:54:22.991   976-1176  CHRE                    chre                                 D  @ 411200.649: [ActivityPlatform] type 6, confidence 41
+2023-07-11 10:54:23.141   816-816   qorvo.uwb.uwbmac        android.hardware.qorvo.uwb.service   I  report_nl_cb
+2023-07-11 10:54:23.141   816-816   qorvo.uwb....ckend_fira android.hardware.qorvo.uwb.service   I  handle_session_stop: session (12345) stopped for reason (0)
+2023-07-11 10:54:23.141   816-816   qorvo.uwb....ckend_fira android.hardware.qorvo.uwb.service   I  state_notification_with_code: MT/GID/OID 6102 NTF 3 (0)
+2023-07-11 10:54:23.142 21073-22149 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: session notification callback.
+2023-07-11 10:54:23.142 21073-22149 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: callback onSessionStatusNotificationReceived
+2023-07-11 10:54:23.142 21073-22149 NativeUwbManager        system_server                        D  onSessionStatusNotificationReceived(12345, 3, 0)
+2023-07-11 10:54:23.142 21073-22149 UwbSessionManager       system_server                        I  onSessionStatusNotificationReceived - Session ID : 12345, state : IDLE, reasonCode:0
+2023-07-11 10:54:23.142 21073-27129 UwbSessionNotiManager   system_server                        I  IUwbRangingCallbacks - onRangingStopped
+2023-07-11 10:54:23.142 21902-21961 Uwb.Rangin...on@de6587] com.google.android.gms.persistent    V  onRangingStopped - sessionHandle: SessionHandle [id=1, package-name: com.google.android.gms, uid: 10159, pid: 21902]
+2023-07-11 10:54:23.144   969-969   AOC                     aocd                                 D  A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x00cb, tag: 0xfc [cntr = 12780]
+2023-07-11 10:54:23.144   969-969   AOC                     aocd                                 D  A3:MSG: controller.cc, 811: CNTRL: ipc: uwb_service, cmd ID: 0x00cb, tag: 0xfc, rc: 0
+2023-07-11 10:54:23.144   969-969   AOC                     aocd                                 D  A3:MSG: controller.cc, 273: CNTRL: cmd ID: 0x00cd, tag: 0xfd [cntr = 12781]
+2023-07-11 10:54:23.145   969-969   AOC                     aocd                                 D  A3:MSG: controller.cc, 811: CNTRL: ipc: uwb_service, cmd ID: 0x00cd, tag: 0xfd, rc: 0
+2023-07-11 10:54:23.146 21902-23086 NearbyUWB               com.google.android.gms.persistent    I  (REDACTED) Ranging Suspended: %s reason code (%s)
+2023-07-11 10:54:23.155 26608-26608 System.out              at.jku.ins.plainjavauwbapp           I  CONNECTION LOST
+2023-07-11 10:54:23.156   909-914   WPKTRT                  wfc-pkt-router                       I  process_link_down_or_deleted: wpan0 is deactivated
+2023-07-11 10:54:23.157 21073-22149 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: core notification callback.
+2023-07-11 10:54:23.157 21073-22149 uwb                     system_server                        D  uwb_uci_jni_rust::notification_manager_android: UCI JNI: callback onDeviceStatusNotificationReceived
+2023-07-11 10:54:23.157 21073-22149 NativeUwbManager        system_server                        D  onDeviceStatusNotificationReceived(1, default)
+2023-07-11 10:54:23.157 21073-22149 UwbServiceCore          system_server                        I  updateState(): deviceState = READY, current adapter state = 2
+2023-07-11 10:54:23.157 21073-22149 UwbServiceCore          system_server                        D  updateState(): state=1, reason=3, chipId=default
+2023-07-11 10:54:23.157 21073-22149 UwbServiceCore          system_server                        D  chipIdToStateMap = {default=1}
+2023-07-11 10:54:23.163 22310-23918 AppLinksAsyncVerifierV2 com.google.android.gms               W  Error performing check:  [CONTEXT service_id=244 ]
+                                                                                                    eqdj: DEADLINE_EXCEEDED: deadline exceeded after 7.959066080s. [closed=[], open=[[buffered_nanos=7959443526, waiting_for_connection]]]
+                                                                                                    	at eqdi.h(:com.google.android.gms@232414044@23.24.14 (190400-544099984):0)
+                                                                                                    	at acgi.u(:com.google.android.gms@232414044@23.24.14 (190400-544099984):2)
+                                                                                                    	at acgi.f(:com.google.android.gms@232414044@23.24.14 (190400-544099984):7)
+                                                                                                    	at cepo.a(:com.google.android.gms@232414044@23.24.14 (190400-544099984):6)
+                                                                                                    	at ceox.c(:com.google.android.gms@232414044@23.24.14 (190400-544099984):1)
+                                                                                                    	at ceox.c(:com.google.android.gms@232414044@23.24.14 (190400-544099984):14)
+                                                                                                    	at ceox.a(:com.google.android.gms@232414044@23.24.14 (190400-544099984):0)
+                                                                                                    	at zkv.run(:com.google.android.gms@232414044@23.24.14 (190400-544099984):1)
+                                                                                                    	at acmg.c(:com.google.android.gms@232414044@23.24.14 (190400-544099984):6)
+                                                                                                    	at acmg.run(:com.google.android.gms@232414044@23.24.14 (190400-544099984):7)
+                                                                                                    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1137)
+                                                                                                    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:637)
+                                                                                                    	at acro.run(:com.google.android.gms@232414044@23.24.14 (190400-544099984):0)
+                                                                                                    	at java.lang.Thread.run(Thread.java:1012)
+2023-07-11 10:54:23.190   822-822   WifiHAL                 ven...e.wifi_ext@1.0-service-vendor  I  Creating message to get link statistics; iface = 47
+2023-07-11 10:54:23.247   822-822   WifiHAL                 ven...e.wifi_ext@1.0-service-vendor  I  In GetLinkStatsCommand::handleResponse
+2023-07-11 10:54:23.286 21073-21209 ConnectivityService     system_server                        D  NetReassign [no changes] [c 0] [a 1] [i 3]
+2023-07-11 10:54:23.526 21393-22309 HbmSvManager            com.android.hbmsvmanager             D  Ambient sensor :  TMD3719 Ambient Light update Lux : 80.15062
+2023-07-11 10:54:25.687 21073-21348 SntpClient              system_server                        D  request time failed: java.net.SocketTimeoutException: Poll timed out
+2023-07-11 10:54:25.687 21073-21348 TrafficStats            system_server                        D  tagSocket(194) with statsTag=0xffffff41, statsUid=-1
+2023-07-11 10:54:25.872  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  usb_pwr_therm:35.156 raw data: usb_pwr_therm:35156 
+2023-07-11 10:54:25.885  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  VIRTUAL-USB-THROTTLING:0 raw data: USB-MINUS-NEUTRAL:-1446 USB-MINUS-USB2:-178 VIRTUAL-USB-THROTTLING:0 neutral_therm:36602 usb_pwr_therm:35156 usb_pwr_therm2:35334 
+2023-07-11 10:54:25.885  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  VIRTUAL-USB-UI:0 raw data: USB-MINUS-NEUTRAL:-1446 USB-MINUS-USB2:-178 VIRTUAL-USB-UI:0 usb_pwr_therm:35156 
+2023-07-11 10:54:25.886  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  USB-MINUS-USB2:-0.178 raw data: USB-MINUS-USB2:-178 
+2023-07-11 10:54:25.886  1478-1484  pixel-thermal           and...are.thermal@2.0-service.pixel  I  USB-MINUS-NEUTRAL:-1.446 raw data: USB-MINUS-NEUTRAL:-1446 
+2023-07-11 10:54:26.190   976-1176  CHRE                    chre                                 I  @ 411203.847: [AR] walking: 79.215681
+2023-07-11 10:54:26.190   976-1176  CHRE                    chre                                 D  @ 411203.848: [ActivityPlatform] type 2, confidence 79
+2023-07-11 10:54:26.281   822-822   WifiHAL                 ven...e.wifi_ext@1.0-service-vendor  I  Creating message to get link statistics; iface = 47
+2023-07-11 10:54:26.338   822-822   WifiHAL                 ven...e.wifi_ext@1.0-service-vendor  I  In GetLinkStatsCommand::handleResponse
+2023-07-11 10:54:26.403 21073-21209 ConnectivityService     system_server                        D  NetReassign [no changes] [c 1] [a 1] [i 22]
+2023-07-11 10:54:26.424 21280-21280 DLObserver              com.android.systemui                 D  onReceive(); android.intent.action.BATTERY_CHANGED
+2023-07-11 10:54:26.424 21280-21280 DLObserver              com.android.systemui                 D  plugged=1
+2023-07-11 10:54:26.427 21280-21280 ReverseChargingControl  com.android.systemui                 I  handleIntentForReverseCharging(): rtx=0 wlc=0 plgac=1 ac=1 acrtx=0 extra=1 this=com.google.android.systemui.reversecharging.ReverseChargingController@917c36e
+2023-07-11 10:54:26.428 21280-21280 PowerNotif...GoogleImpl com.android.systemui                 D  onReceive: android.intent.action.BATTERY_CHANGED
+2023-07-11 10:54:26.428 21280-21280 BatteryDef...tification com.android.systemui                 D  isPlugged: true | isOverheated: false | defenderEnabled: false | isCharged: false | isPluggedInDock: false
+2023-07-11 10:54:26.429   390-390   servicemanager          servicemanager                       I  Found vendor.google.google_battery.IGoogleBattery/default in device VINTF manifest.
+2023-07-11 10:54:26.436 21280-27143 PowerUI                 com.android.systemui                 D  can't show warning due to - plugged: true status unknown: false
+2023-07-11 10:54:26.440 21280-21425 BatteryInfoBroadcast    com.android.systemui                 D  onReceive: android.intent.action.BATTERY_CHANGED isPowerSaveMode: false remainingTimeMillis: 212084392
+2023-07-11 10:54:26.612  1276-1559  twoshay.grip            twoshay                              I  Grip 0 ENTER
+2023-07-11 10:54:26.628  1276-1559  twoshay.grip            twoshay                              I  Grip 0 LEAVE1
+2023-07-11 10:54:26.643   462-627   display                 and...e.composer.hwc3-service.pixel  D  setActiveConfigWithConstraints:: PrimaryDisplay config(37) test(0)
+2023-07-11 10:54:26.651 21073-21091 DisplayDeviceRepository system_server                        I  Display device changed: DisplayDeviceInfo{"Built-in Screen": uniqueId="local:4619827677550801152", 1080 x 2340, modeId 3, defaultModeId 3, supportedModes [{id=1, width=1440, height=3120, fps=60.0, alternativeRefreshRates=[120.00001]}, {id=2, width=1440, height=3120, fps=120.00001, alternativeRefreshRates=[60.0]}, {id=3, width=1080, height=2340, fps=120.00001, alternativeRefreshRates=[60.0]}, {id=4, width=1080, height=2340, fps=60.0, alternativeRefreshRates=[120.00001]}], colorMode 0, supportedColorModes [0, 7, 9], hdrCapabilities HdrCapabilities{mSupportedHdrTypes=[2, 3, 4], mMaxLuminance=1000.0, mMaxAverageLuminance=120.0, mMinLuminance=5.0E-4}, allmSupported false, gameContentTypeSupported false, density 420, 386.366 x 383.458 dpi, appVsyncOff 6233332, presDeadline 11500000, cutout DisplayCutout{insets=Rect(0, 108 - 0, 0) waterfall=Insets{left=0, top=0, right=0, bottom=0} boundingRect={Bounds=[Rect(0, 0 - 0, 0), Rect(490, 0 - 599, 108), Rect(0, 0 - 0, 0), Rect(0, 0 - 0, 0)]} cutoutPathParserInfo={CutoutPathParserInfo{displayWidth=1080 displayHeight=2340 physicalDisplayWidth=1440 physicalDisplayHeight=3120 density={3.5} cutoutSpec={M 677,72 a 43,43 0 1 0 86,0 a 43,43 0 1 0 -86,0 Z @left} rotation={0} scale={1.0} physicalPixelDisplaySizeRatio={0.75}}}}, touch INTERNAL, rotation 0, type INTERNAL, address {port=0, model=0x401ceccbbbeef1}, deviceProductInfo DeviceProductInfo{name=Common Panel, manufacturerPnpId=GGL, productId=0, modelYear=null, manufactureDate=ManufactureDate{week=1, year=1990}, connectionToSinkType=0}, state ON, committedState ON, frameRateOverride , brightnessMinimum 0.0, brightnessMaximum 1.0, brightnessDefault 0.17429718, roundedCorners RoundedCorners{[RoundedCorner{position=TopLeft, radius=38, center=Point(38, 38)}, RoundedCorner{position=TopRight, radius=38, center=Point(1042, 38)}, RoundedCorner{position=BottomRight, radius=37, center=Point(1043, 2303)}, RoundedCorner{position=BottomLeft, radius=37, center=Point(37, 2303)}]}, FLAG_ALLOWED_TO_BE_DEFAULT_DISPLAY, FLAG_ROTATES_WITH_CONTENT, FLAG_SECURE, FLAG_SUPPORTS_PROTECTED_BUFFERS, installOrientation 0}
+2023-07-11 10:54:26.666   452-2436  BpBinder                surfaceflinger                       I  onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+2023-07-11 10:54:26.667   452-452   BpBinder                surfaceflinger                       I  onLastStrongRef automatically unlinking death recipients: <uncached descriptor>
+2023-07-11 10:54:26.673 22812-22812 ContentCaptureHelper    com...d.googlequicksearchbox:search  I  Setting logging level to OFF
+2023-07-11 10:54:26.673 22812-22812 TextView                com...d.googlequicksearchbox:search  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.679 21795-21795 BcSmartspaceCard        com...le.android.apps.nexuslauncher  W  No title view to update
+2023-07-11 10:54:26.679 21795-21795 BcSmartspaceCard        com...le.android.apps.nexuslauncher  I  setFormattedContentDescription: textView=SUBTITLE, text=null, iconDescription=null, contentDescription=null
+2023-07-11 10:54:26.694 21795-21795 Compatibil...geReporter com...le.android.apps.nexuslauncher  D  Compat change id reported: 163400105; UID 10218; state: ENABLED
+2023-07-11 10:54:26.694 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.694 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.694 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.694 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.694 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.694 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.694 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.694 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.694 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.694 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.701 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.701 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.701 21795-21795 TextView                com...le.android.apps.nexuslauncher  W  onProvideContentCaptureStructure(): calling assumeLayout()
+2023-07-11 10:54:26.762 21073-21139 InputDispatcher         system_server                        I  Channel [Gesture Monitor] swipe-up (server) is stealing touch from [57f1eff at.jku.ins.plainjavauwbapp/at.jku.ins.plainjavauwbapp.MainActivity (server), [Gesture Monitor] edge-swipe (server)]
+2023-07-11 10:54:26.764 21280-21280 vol.VolumeDialogImpl    com.android.systemui                 I  mDialog.dismiss() reason: volume_controller from: com.android.systemui.volume.VolumeDialogImpl$7.onDismissRequested:2
+2023-07-11 10:54:26.767 24562-27153 GMS_MM_Logger           com.google.android.gms.unstable      I  Memory Metric Logging not allowed. Stopping.
+2023-07-11 10:54:26.776 21073-21091 WindowManager           system_server                        V  Unknown focus tokens, dropping reportFocusChanged
+2023-07-11 10:54:26.777 21073-21178 Handwritin...Controller system_server                        E  Cannot get requestId: Handwriting was not initialized.
+2023-07-11 10:54:26.795  1634-1647  native                  and...dware.input.processor-service  I  I0000 00:00:1689065666.795793    1647 tf_lite_classifier.cc:400] Event stream classified as kNone
+2023-07-11 10:54:26.810   452-2436  SurfaceFlinger          surfaceflinger                       E  Only WindowManager is allowed to use eEarlyWakeup[Start|End] flags
+2023-07-11 10:54:26.996 21073-21088 LatencyTracker          system_server                        I  ACTION_START_RECENTS_ANIMATION latency=61
+2023-07-11 10:54:27.052   452-2436  SurfaceFlinger          surfaceflinger                       E  Only WindowManager is allowed to use eEarlyWakeup[Start|End] flags
+2023-07-11 10:54:27.410 22812-22812 A                       com...d.googlequicksearchbox:search  I  onStart
+2023-07-11 10:54:27.411 21795-22585 OneSearchS...stProvider com...le.android.apps.nexuslauncher  E  Failed to fetch suggestions from AppSearch, fallback to AGA
+                                                                                                    java.util.concurrent.CompletionException: java.util.NoSuchElementException: No value present
+                                                                                                    	at java.util.concurrent.CompletableFuture.encodeThrowable(CompletableFuture.java:307)
+                                                                                                    	at java.util.concurrent.CompletableFuture.completeThrowable(CompletableFuture.java:322)
+                                                                                                    	at java.util.concurrent.CompletableFuture$UniAccept.tryFire(CompletableFuture.java:680)
+                                                                                                    	at java.util.concurrent.CompletableFuture.postComplete(CompletableFuture.java:482)
+                                                                                                    	at java.util.concurrent.CompletableFuture.completeExceptionally(CompletableFuture.java:2064)
+                                                                                                    	at com.google.android.apps.nexuslauncher.allapps.K.onResult(Unknown Source:59)
+                                                                                                    	at android.app.appsearch.SearchSessionUtil$1.lambda$onResult$0(SearchSessionUtil.java:128)
+                                                                                                    	at android.app.appsearch.SearchSessionUtil$1.$r8$lambda$_nlk9WiPjSfaAsqKYmp0aPvSRC0(Unknown Source:0)
+                                                                                                    	at android.app.appsearch.AppSearchSession$4$$ExternalSyntheticLambda1.run(Unknown Source:26)
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:942)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201)
+                                                                                                    	at android.os.Looper.loop(Looper.java:288)
+                                                                                                    	at android.os.HandlerThread.run(HandlerThread.java:67)
+                                                                                                    Caused by: java.util.NoSuchElementException: No value present
+                                                                                                    	at java.util.Optional.get(Optional.java:144)
+                                                                                                    	at com.google.android.apps.nexuslauncher.allapps.K.onResult(Unknown Source:16)
+                                                                                                    	at android.app.appsearch.SearchSessionUtil$1.lambda$onResult$0(SearchSessionUtil.java:128) 
+                                                                                                    	at android.app.appsearch.SearchSessionUtil$1.$r8$lambda$_nlk9WiPjSfaAsqKYmp0aPvSRC0(Unknown Source:0) 
+                                                                                                    	at android.app.appsearch.AppSearchSession$4$$ExternalSyntheticLambda1.run(Unknown Source:26) 
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:942) 
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99) 
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201) 
+                                                                                                    	at android.os.Looper.loop(Looper.java:288) 
+                                                                                                    	at android.os.HandlerThread.run(HandlerThread.java:67) 
+2023-07-11 10:54:27.412 21795-22585 OneSearchS...stProvider com...le.android.apps.nexuslauncher  D  Created the binder channel successfully for end point service =com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService , mChannel=Q0{delegate=L0{logId=13, target=directaddress:///AndroidComponentAddress%5BIntent%20%7B%20act=grpc.io.action.BIND%20cmp=com.google.android.googlequicksearchbox/com.google.android.apps.search.googleapp.search.suggest.plugins.onesearch.server.OneSearchSuggestService%20%7D%5D}} , mOneSearchConnection=y1.J@7652012
+2023-07-11 10:54:27.413 21795-21827 QuickstepModelDelegate  com...le.android.apps.nexuslauncher  D  notifyAppTargetEvent action=1 launchLocation=workspace/0/[-1,-1]/[1,1]
+2023-07-11 10:54:27.423 22812-22812 A                       com...d.googlequicksearchbox:search  I  onResume
+2023-07-11 10:54:27.427 22515-22515 GsaVoiceInteractionSrv  com...oglequicksearchbox:interactor  I  Handling ACTION_START_HOTWORD
+2023-07-11 10:54:27.427 21073-21091 WindowManager           system_server                        V  Unknown focus tokens, dropping reportFocusChanged
+2023-07-11 10:54:27.428 21073-21268 UwbSessionManager       system_server                        I  App state change. IsFg: false. Reconfiguring session ntf control
+2023-07-11 10:54:27.428 21073-21268 UwbSessionManager       system_server                        I  reconfigure() - Session ID : 12345
+2023-07-11 10:54:27.428 21073-21268 UwbSessionManager       system_server                        I  reconfigure() - update reconfigure params: com.android.x.uwb.com.google.uwb.support.fira.FiraRangingReconfigureParams@274bf35
+2023-07-11 10:54:27.429 21073-21268 AndroidRuntime          system_server                        E  *** FATAL EXCEPTION IN SYSTEM PROCESS: UwbService
+                                                                                                    java.lang.IllegalArgumentException
+                                                                                                    	at com.android.x.uwb.com.google.common.base.Preconditions.checkArgument(Unknown Source:5)
+                                                                                                    	at com.android.x.uwb.com.google.uwb.support.fira.FiraOpenSessionParams$Builder.checkRangeDataNtfConfig(Unknown Source:71)
+                                                                                                    	at com.android.x.uwb.com.google.uwb.support.fira.FiraOpenSessionParams$Builder.build(Unknown Source:11)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager$UwbSession.updateFiraParamsOnReconfigure(Unknown Source:145)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager.reconfigureInternal(Unknown Source:93)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager.-$$Nest$mreconfigureInternal(Unknown Source:0)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager$UwbSession.reconfigureFiraSessionOnFgStateChange(Unknown Source:48)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager$1.lambda$onUidImportance$0(Unknown Source:83)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager$1.$r8$lambda$BbVl9Tj34jkESeK6LicC5SCPxMg(Unknown Source:0)
+                                                                                                    	at com.android.server.uwb.UwbSessionManager$1$$ExternalSyntheticLambda0.run(Unknown Source:6)
+                                                                                                    	at android.os.Handler.handleCallback(Handler.java:942)
+                                                                                                    	at android.os.Handler.dispatchMessage(Handler.java:99)
+                                                                                                    	at android.os.Looper.loopOnce(Looper.java:201)
+                                                                                                    	at android.os.Looper.loop(Looper.java:288)
+                                                                                                    	at android.os.HandlerThread.run(HandlerThread.java:67)
+2023-07-11 10:54:27.430 22515-22928 GsaVoiceInteractionSrv  com...oglequicksearchbox:interactor  I  (REDACTED) disregardHotwordSetting: %b
+2023-07-11 10:54:27.431 22515-22928 GsaVoiceInteractionSrv  com...oglequicksearchbox:interactor  I  Cannot start hotword, hotword has been explicitly disabled.
+2023-07-11 10:54:27.437 22812-22812 A                       com...d.googlequicksearchbox:search  I  Constructor was called
+2023-07-11 10:54:27.437 22472-22634 AiAiEcho                com.google.android.as                I  Predicting[7]: { Feature:1, creation:2023-07-11T07:27:23Z, expiry:2023-07-11T08:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-11T08:00:00Z, expiry:2023-07-11T09:00:00Z, isExpired: false}, { Feature:1, creation:2023-07-11T09:00:00Z, expiry:2023-07-11T09:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-11T10:00:00Z, expiry:2023-07-11T10:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-11T11:00:00Z, expiry:2023-07-11T11:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-11T12:00:00Z, expiry:2023-07-11T12:00:00Z, isExpired: true}, { Feature:1, creation:2023-07-11T13:00:00Z, expiry:2023-07-11T13:00:00Z, isExpired: true} [CONTEXT sampling_count=5 ]
+2023-07-11 10:54:27.439 22812-22812 A                       com...d.googlequicksearchbox:search  I  No savedInstanceState.
+2023-07-11 10:54:27.439 22812-22812 A                       com...d.googlequicksearchbox:search  I  makeRequest: subscribing to new source
+2023-07-11 10:54:27.439 22078-22078 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.onFinishInput():3306 
+2023-07-11 10:54:27.440 22078-22078 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 0, locked = false
+2023-07-11 10:54:27.440 22078-22078 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.onStartInput():1909 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x0 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.google.android.apps.nexuslauncher fieldId=-1 fieldName=null extras=null hintLocales=[]}, false)
+2023-07-11 10:54:27.440 22078-22078 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.shouldHideHeaderOnInitialState():1990 ShouldHideHeaderOnInitialState = false
+2023-07-11 10:54:27.440 22078-22078 GoogleInpu...hodService com...gle.android.inputmethod.latin  I  GoogleInputMethodService.updateDeviceLockedStatus():2127 repeatCheckTimes = 1, locked = false
+2023-07-11 10:54:27.441 22812-22812 A                       com...d.googlequicksearchbox:search  I  OnCreate Was Called
+2023-07-11 10:54:27.442 22812-22812 PromoManagerDataService com...d.googlequicksearchbox:search  I  PromoManagerDataServiceImpl.getMinusOnePromotion
+2023-07-11 10:54:27.447 22472-22634 AiAiEcho                com.google.android.as                I  EchoTargets: Feature:1
+                                                                                                    Filtered by AiAi flag check: 
+                                                                                                    [CONTEXT ratelimit_period="10 SECONDS" ]
+2023-07-11 10:54:27.448 22472-22634 AiAiEcho                com.google.android.as                I  Ranked targets strategy: WEIGHTED, count: 1, ranking metadata: { cardId: WEATHER-569377244, card type: 1, update time: 2023-07-11T08:00:00Z, expiration time: 2023-07-11T09:00:00Z, ranking metadata: RankingMetaData(urgency=0.011, priority=0.3, recency=1.0, rankScore=0.0033000002, importantTimePoints=# nqh@7bca4) } [CONTEXT ratelimit_period="10 SECONDS" ]
+2023-07-11 10:54:27.448 22472-22634 AiAiEcho                com.google.android.as                I  #weatherTwiddler: Weather removes SubtitleSupplementalItem in surface: home [CONTEXT ratelimit_period="10 SECONDS" ]
+2023-07-11 10:54:27.453 22812-22838 earchbox:search         com...d.googlequicksearchbox:search  I  JIT allocated 62KB for compiled code of java.lang.Object com.google.android.apps.gsa.binaries.satin.app.amu.f()
+2023-07-11 10:54:27.462 22472-23494 AiAiAutofill            com.google.android.as                I  Connected AiAiAugmentedAutofillService.
+2023-07-11 10:54:27.463 22812-22812 A                       com...d.googlequicksearchbox:search  I  Account disc initialised
+2023-07-11 10:54:27.463 22812-22812 PromoManagerDataService com...d.googlequicksearchbox:search  I  PromoManagerDataServiceImpl.getAccountMenuPromotion
+2023-07-11 10:54:27.465 22812-23105 A                       com...d.googlequicksearchbox:search  I  (REDACTED) #enqueuePeriodicJob: running = %b
+2023-07-11 10:54:27.465 22472-22634 AiAiEcho                com.google.android.as                I  #postPredictionTargets: Sending updates to UISurface home with targets# 1 (types=[1])
+2023-07-11 10:54:27.465 22812-23105 A                       com...d.googlequicksearchbox:search  I  (REDACTED) #scheduledConfig, timestampCreated %s, scheduledOffset %s
+2023-07-11 10:54:27.466 21795-21795 SsCardPagerAdapter      com...le.android.apps.nexuslauncher  I  Use UI template for the feature: 1
+2023-07-11 10:54:27.469 22812-23105 A                       com...d.googlequicksearchbox:search  I  (REDACTED) loading data on surface %s.
+2023-07-11 10:54:27.470 22812-22812 A                       com...d.googlequicksearchbox:search  I  (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+2023-07-11 10:54:27.470 22812-22812 A                       com...d.googlequicksearchbox:search  I  (REDACTED) onApplyWindowInsets: systemWindowInsets=%s
+2023-07-11 10:54:27.471 21795-21795 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  No text view can be set up
+2023-07-11 10:54:27.471 21795-21795 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  Passed-in item info is null
+2023-07-11 10:54:27.471 21795-21795 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  D  Passed-in item info is null
+2023-07-11 10:54:27.471 21795-21795 SsBaseTemplateCard      com...le.android.apps.nexuslauncher  I  Secondary card pane is null
+2023-07-11 10:54:27.473 22812-22812 A                       com...d.googlequicksearchbox:search  I  (REDACTED) Created gRPC endpoint for service %s
+2023-07-11 10:54:27.479 22812-22812 A                       com...d.googlequicksearchbox:search  W  Trying to switch to the same account that's already selected
+2023-07-11 10:54:27.479 22812-22812 A                       com...d.googlequicksearchbox:search  I  #accountsLoaded
+2023-07-11 10:54:27.492 22812-23096 A                       com...d.googlequicksearchbox:search  I  (REDACTED) Created StreamSubTree successfully, items %s
+2023-07-11 10:54:27.493 22812-23096 A                       com...d.googlequicksearchbox:search  I  (REDACTED) RenderableStreamDataSource#loadData - sessionStatus(%s)
+2023-07-11 10:54:27.495 22812-23096 A                       com...d.googlequicksearchbox:search  I  RenderableStreamDataSource#loadData - cacheHit
+2023-07-11 10:54:27.496 22812-23096 A                       com...d.googlequicksearchbox:search  I  (REDACTED) RenderableStreamDataSource#loadData - succeed, cache status: %s
+2023-07-11 10:54:27.496 22812-22812 A                       com...d.googlequicksearchbox:search  I  (REDACTED) StreamFragmentPeer#onNewData called, renderable slices %s
+2023-07-11 10:54:27.501 22812-22812 A                       com...d.googlequicksearchbox:search  W  Cant set root ID, DiscoverVeProvider is null
+2023-07-11 10:54:27.530 21073-21268 DropBoxManagerService   system_server                        I  add tag=system_server_crash isTagEnabled=true flags=0x6
+2023-07-11 10:54:27.541 21073-21268 Process                 system_server                        I  Sending signal. PID: 21073 SIG: 9
+2023-07-11 10:54:27.549 22812-22812 View                    com...d.googlequicksearchbox:search  W  requestLayout() improperly called by android.widget.FrameLayout{baa2361 V.E...... ......ID 0,0-1080,294 #7f0b14eb app:id/googleapp_discover_header_container} during layout: running second layout pass
+2023-07-11 10:54:27.993   988-1025  adbd                    adbd                                 I  adbd_auth: hit EOF on framework fd
+2023-07-11 10:54:27.993   988-1025  adbd                    adbd                                 I  adbd_auth: received new framework fd -1 (current = 20)
+2023-07-11 10:54:27.998  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:27.998  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.000  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.000  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.002  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.002  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.005  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.005  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.006  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.006  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.030  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.030  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.031  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.032  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.033  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.033  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.035  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.035  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.038  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.038  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.039  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.039  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.040  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.040  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.041  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.041  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.042  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.042  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.043  2660-2678  pixelstats-vendor       pixelstats-vendor                    E  associateClass: Cannot associate class 'android.frameworks.stats.IStats' to dead binder.
+2023-07-11 10:54:28.043   389-389   lowmemorykiller         lmkd                                 I  lmkd data connection dropped
+2023-07-11 10:54:28.043   389-389   lowmemorykiller         lmkd                                 I  closing lmkd data connection
+2023-07-11 10:54:28.043  2660-2678  pixelstats-uevent       pixelstats-vendor                    E  Unable to get Stats service instance.
+2023-07-11 10:54:28.058   956-1954  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb400007231315d48 : 0(0 size) total buffers - 0(0 size) used buffers - 10/15 (recycle/alloc) - 6/14 (fetch/transfer)
+2023-07-11 10:54:28.058   956-1954  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb400007231315d48 cached: 0/0M, 0/0% in use; allocs: 15, 67% recycled; transfers: 14, 57% unfetched
+2023-07-11 10:54:28.058   822-822   vendor.goo...ice-vendor ven...e.wifi_ext@1.0-service-vendor  D  Dead callback removed from list
+2023-07-11 10:54:28.058   956-1954  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb40000723130d978 : 0(0 size) total buffers - 0(0 size) used buffers - 3/5 (recycle/alloc) - 2/4 (fetch/transfer)
+2023-07-11 10:54:28.058   822-822   vendor.goo...ice-vendor ven...e.wifi_ext@1.0-service-vendor  D  Dead callback removed from list
+2023-07-11 10:54:28.058   956-1954  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb40000723130d978 cached: 0/0M, 0/0% in use; allocs: 5, 60% recycled; transfers: 4, 50% unfetched
+2023-07-11 10:54:28.058   822-822   vendor.goo...ice-vendor ven...e.wifi_ext@1.0-service-vendor  D  Dead callback removed from list
+2023-07-11 10:54:28.059   956-1954  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb400007231317b58 : 0(0 size) total buffers - 0(0 size) used buffers - 10/14 (recycle/alloc) - 4/13 (fetch/transfer)
+2023-07-11 10:54:28.059   956-1954  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb400007231317b58 cached: 0/0M, 0/0% in use; allocs: 14, 71% recycled; transfers: 13, 69% unfetched
+2023-07-11 10:54:28.059   956-27262 BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb40000723130f538 : 0(0 size) total buffers - 0(0 size) used buffers - 16/19 (recycle/alloc) - 3/18 (fetch/transfer)
+2023-07-11 10:54:28.059   956-1954  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb400007231316688 : 0(0 size) total buffers - 0(0 size) used buffers - 11/15 (recycle/alloc) - 4/14 (fetch/transfer)
+2023-07-11 10:54:28.059   956-27262 BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb40000723130f538 cached: 0/0M, 0/0% in use; allocs: 19, 84% recycled; transfers: 18, 83% unfetched
+2023-07-11 10:54:28.059   956-1954  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb400007231316688 cached: 0/0M, 0/0% in use; allocs: 15, 73% recycled; transfers: 14, 71% unfetched
+2023-07-11 10:54:28.059   956-1954  BufferPoolAccessor2.0   media.swcodec                        D  bufferpool2 0xb400007231312f08 : 0(0 size) total buffers - 0(0 size) used buffers - 21/25 (recycle/alloc) - 4/24 (fetch/transfer)
+2023-07-11 10:54:28.059   956-1954  BufferPoolAccessor2.0   media.swcodec                        D  Destruction - bufferpool2 0xb400007231312f08 cached: 0/0M, 0/0% in use; allocs: 25, 84% recycled; transfers: 24, 83% unfetched
+2023-07-11 10:54:28.060 20947-20996 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-11 10:54:28.060 20947-20996 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-11 10:54:28.060 20947-20996 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-11 10:54:28.060 20947-20996 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-11 10:54:28.060 20947-20996 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-11 10:54:28.060 20947-20996 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-11 10:54:28.060 20947-20996 AudioFlinger            audioserver                          W  power manager service died !!!
+2023-07-11 10:54:28.061 20950-20950 IPCThreadState          netd                                 E  attemptIncStrongHandle(6): Not supported
+2023-07-11 10:54:28.061 21902-26918 GameService             com.google.android.gms.persistent    W  System service binder died. Shutting down
+2023-07-11 10:54:28.061 21265-21265 wpa_supplicant          wpa_supplicant                       E  Client died. Terminating...
+2023-07-11 10:54:28.062 21265-21265 wpa_supplicant          wpa_supplicant                       E  unlinkToDeath: removed reference to death recipient but unlink failed.
+2023-07-11 10:54:28.062 21902-21902 GameService             com.google.android.gms.persistent    I  onDisconnected [CONTEXT service_id=311 ]
+2023-07-11 10:54:28.064 20946-20946 Zygote                  zygote64                             E  Zygote failed to write to system_server FD: Connection refused
+2023-07-11 10:54:28.064 20946-20946 Zygote                  zygote64                             I  Process 21073 exited due to signal 9 (Killed)
+2023-07-11 10:54:28.064 20946-20946 Zygote                  zygote64                             E  Exit zygote because system server (pid 21073) has terminated
+2023-07-11 10:54:28.064   752-2399  IPCThreadState          statsd                               E  attemptIncStrongHandle(15): Not supported
+2023-07-11 10:54:28.066 21795-21809 Sensors                 com...le.android.apps.nexuslauncher  W  sensorservice died [0xb40000776a4adbd0]
+2023-07-11 10:54:28.066 22812-22882 Sensors                 com...d.googlequicksearchbox:search  W  sensorservice died [0xb40000776a4d8680]
+2023-07-11 10:54:28.066 21393-26434 Sensors                 com.android.hbmsvmanager             W  sensorservice died [0xb40000776a4af750]
+2023-07-11 10:54:28.066 21604-21627 Sensors                 com.android.settings                 W  sensorservice died [0xb40000776a4bf920]
+2023-07-11 10:54:28.066 22515-23725 Sensors                 com...oglequicksearchbox:interactor  W  sensorservice died [0xb40000776a4afc20]
+2023-07-11 10:54:28.066 21902-26918 Sensors                 com.google.android.gms.persistent    W  sensorservice died [0xb40000776a4c14a0]
+2023-07-11 10:54:28.066 21902-26918 Sensors                 com.google.android.gms.persistent    W  sensorservice died [0xb40000776a4c14a0]
+2023-07-11 10:54:28.066 22472-22505 Sensors                 com.google.android.as                W  sensorservice died [0xb40000776a4c5800]
+2023-07-11 10:54:28.066 23053-23505 Sensors                 com.google.android.apps.scone        W  sensorservice died [0xb40000776a4aec50]
+2023-07-11 10:54:28.066 24376-26546 Sensors                 com.google.android.GoogleCamera      W  sensorservice died [0xb40000776a4bb720]
+2023-07-11 10:54:28.066 21280-22531 Sensors                 com.android.systemui                 W  sensorservice died [0xb40000776a4b2e50]
+2023-07-11 10:54:28.066 22780-22806 Sensors                 com.google.android.apps.dreamliner   W  sensorservice died [0xb40000776a4aed00]
+2023-07-11 10:54:28.066 20950-27180 netd                    netd                                 E  unlinkToDeath: removed reference to death recipient but unlink failed.
+2023-07-11 10:54:28.067 22153-22168 Sensors                 com.google.android.apps.wellbeing    W  sensorservice died [0xb40000776a4ad7b0]
+2023-07-11 10:54:28.068   752-2399  statsd                  statsd                               W  statscompanion service died
+2023-07-11 10:54:28.068   752-2399  statsd                  statsd                               W  Reset statsd upon system server restarts.
+2023-07-11 10:54:28.068   752-2399  IPCThreadState          statsd                               E  attemptIncStrongHandle(115): Not supported
+2023-07-11 10:54:28.069   785-785   android.ha...vice.gs201 and...hardware.health-service.gs201  E  unlinkToDeath: removed reference to death recipient but unlink failed.
+2023-07-11 10:54:28.069   785-785   IPCThreadState          and...hardware.health-service.gs201  E  attemptIncStrongHandle(2): Not supported
+2023-07-11 10:54:28.069 22515-23725 VoiceInteractionService com...oglequicksearchbox:interactor  E  system service binder died shutting down
+2023-07-11 10:54:28.070 22515-22515 GsaVoiceInteractionSrv  com...oglequicksearchbox:interactor  I  onShutdown
+2023-07-11 10:54:28.070 22515-22515 VIS.ServiceLifecycle    com...oglequicksearchbox:interactor  I  #onShutdown()
+2023-07-11 10:54:28.071 22515-22515 VIS.ServiceLifecycle    com...oglequicksearchbox:interactor  I  (REDACTED) Running action(%s) over listeners(%s).
+2023-07-11 10:54:28.072 22515-22515 VIS.ServiceLifecycle    com...oglequicksearchbox:interactor  I  (REDACTED) Done action(%s) over listeners(%s).
+2023-07-11 10:54:28.075 22515-23106 TRG.HotwordSource       com...oglequicksearchbox:interactor  I  HDM invocation source is disabled.
+2023-07-11 10:54:28.076 22515-23106 TRG.SourceDefinitions   com...oglequicksearchbox:interactor  I  (REDACTED) Enabled invocation sources: %s.
+2023-07-11 10:54:28.078 22515-23099 TRG.SourceDefinitions   com...oglequicksearchbox:interactor  I  (REDACTED) Enabled invocation sources: %s.
+2023-07-11 10:54:28.079 22515-22515 AndroidRuntime          com...oglequicksearchbox:interactor  D  Shutting down VM
