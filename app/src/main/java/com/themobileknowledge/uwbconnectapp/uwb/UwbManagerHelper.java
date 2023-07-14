@@ -2,12 +2,14 @@ package com.themobileknowledge.uwbconnectapp.uwb;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.os.Handler;
 import android.os.Looper;
 import android.util.Log;
 
 import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 import androidx.core.uwb.RangingCapabilities;
 import androidx.core.uwb.RangingParameters;
 import androidx.core.uwb.RangingResult;
@@ -28,6 +30,7 @@ import com.themobileknowledge.uwbconnectapp.uwb.model.UwbRemoteDevice;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -41,11 +44,15 @@ import io.reactivex.rxjava3.subscribers.DisposableSubscriber;
 
 public class UwbManagerHelper {
 
-    private static final String TAG = UwbManagerHelper.class.getSimpleName();
+    public static final String TAG = UwbManagerHelper.class.getSimpleName();
 
-    private static final int CONTROLLER_ROLE = 0x00;
-    private static final int CONTROLEE_ROLE = 0x01;
-
+    public static final int CONTROLLER_ROLE = 0x00;
+    public static final int CONTROLEE_ROLE = 0x01;
+    // Default UWB Ranging configuration parameters
+    public static final int UWB_CHANNEL = 9;
+    public static final int UWB_PREAMBLE_INDEX = 10;
+    public static final int PREFERRED_UWB_PHONE_ROLE = CONTROLEE_ROLE;
+    public static final int PREFERRED_UWB_PROFILE_ID = RangingParameters.CONFIG_UNICAST_DS_TWR;
     // UWB Role map as per Android OoB Specification
     public static Map<String, Integer> uwbRoleMap;
 
@@ -55,37 +62,16 @@ public class UwbManagerHelper {
         uwbRoleMap.put("Controlee", CONTROLEE_ROLE);
     }
 
-    // Default UWB Ranging configuration parameters
-    public static final int UWB_CHANNEL = 9;
-    public static final int UWB_PREAMBLE_INDEX = 10;
-    public static final int PREFERRED_UWB_PHONE_ROLE = CONTROLEE_ROLE;
-    public static final int PREFERRED_UWB_PROFILE_ID = RangingParameters.CONFIG_UNICAST_DS_TWR;
-
+    // List with all active Uwb Ranging sessions
+    private final HashMap<String, UwbRemoteDevice> mUwbRemoteDeviceList = new HashMap<>();
     // Configurable parameters
     private int mUwbChannel = UWB_CHANNEL;
     private int mUwbPreambleIndex = UWB_PREAMBLE_INDEX;
     private int mPreferredUwbProfileId = PREFERRED_UWB_PROFILE_ID;
     private int mPreferredUwbPhoneRole = PREFERRED_UWB_PHONE_ROLE;
-
     private Context mContext;
     private UwbManager mUwbManager = null;
-
     private Listener mListener = null;
-
-    // List with all active Uwb Ranging sessions
-    private final HashMap<String, UwbRemoteDevice> mUwbRemoteDeviceList = new HashMap<>();
-
-    public interface Listener {
-        void onRangingCapabilities(RangingCapabilities rangingCapabilities);
-
-        void onRangingStarted(String address, UwbPhoneConfigData uwbPhoneConfigData);
-
-        void onRangingResult(String address, RangingResult rangingResult);
-
-        void onRangingError(Throwable error);
-
-        void onRangingComplete();
-    }
 
     /**
      * UwbManagerHelper class is the entry point for UWB technology.
@@ -201,6 +187,10 @@ public class UwbManagerHelper {
         }
 
         if (ActivityCompat.checkSelfPermission(mContext, Manifest.permission.UWB_RANGING) == PackageManager.PERMISSION_GRANTED) {
+
+            Intent serviceIntent = new Intent(this.mContext, ServiceToMakeAppRunInBackground.class);
+            ContextCompat.startForegroundService(this.mContext, serviceIntent);
+
             Thread t = new Thread(() -> {
 
                 byte uwbDeviceRangingRole = selectUwbDeviceRangingRole(uwbDeviceConfigData.getSupportedDeviceRangingRoles());
@@ -246,7 +236,7 @@ public class UwbManagerHelper {
                     // Logs for debugging
                     Log.d(TAG, "UWB SessionId: " + sessionId);
                     Log.d(TAG, "UWB Local Address: " + localAddress);
-                    Log.d(TAG, "UWB Remote Address: " + uwbDevice);
+                    Log.d(TAG, "UWB Remote Address: " + Arrays.toString(uwbDevice.getAddress().getAddress()));
                     Log.d(TAG, "UWB Channel: " + uwbComplexChannel.getChannel());
                     Log.d(TAG, "UWB Preamble Index: " + uwbComplexChannel.getPreambleIndex());
 
@@ -338,7 +328,6 @@ public class UwbManagerHelper {
         }
     }
 
-
     /**
      * Stops an UWB ranging session
      *
@@ -419,7 +408,7 @@ public class UwbManagerHelper {
         return true;
     }
 
-    private byte selectUwbProfileId(int supportedUwbProfileIds) {
+    public byte selectUwbProfileId(int supportedUwbProfileIds) {
         // First try to use preferred Uwb Profile ID selection
         if (BigInteger.valueOf(supportedUwbProfileIds).testBit(mPreferredUwbProfileId)) {
             return (byte) mPreferredUwbProfileId;
@@ -466,7 +455,7 @@ public class UwbManagerHelper {
         return null;
     }
 
-    private void onRangingStarted (final String address, final UwbPhoneConfigData uwbPhoneConfigData) {
+    private void onRangingStarted(final String address, final UwbPhoneConfigData uwbPhoneConfigData) {
         // Send callback to app on the UI Thread
         new Handler(Looper.getMainLooper()).post(() -> {
             if (mListener != null) {
@@ -475,7 +464,7 @@ public class UwbManagerHelper {
         });
     }
 
-    private void onRangingResult (final String address, final RangingResult rangingResult) {
+    private void onRangingResult(final String address, final RangingResult rangingResult) {
         // Send callback to app on the UI Thread
         new Handler(Looper.getMainLooper()).post(() -> {
             if (mListener != null) {
@@ -484,7 +473,7 @@ public class UwbManagerHelper {
         });
     }
 
-    private void onRangingError (final Throwable error) {
+    private void onRangingError(final Throwable error) {
         // Send callback to app on the UI Thread
         new Handler(Looper.getMainLooper()).post(() -> {
             if (mListener != null) {
@@ -493,7 +482,7 @@ public class UwbManagerHelper {
         });
     }
 
-    private void onRangingComplete () {
+    private void onRangingComplete() {
         // Send callback to app on the UI Thread
         new Handler(Looper.getMainLooper()).post(() -> {
             if (mListener != null) {
@@ -502,12 +491,24 @@ public class UwbManagerHelper {
         });
     }
 
-    private void onRangingCapabilities (final RangingCapabilities rangingCapabilities) {
+    private void onRangingCapabilities(final RangingCapabilities rangingCapabilities) {
         // Send callback to app on the UI Thread
         new Handler(Looper.getMainLooper()).post(() -> {
             if (mListener != null) {
                 mListener.onRangingCapabilities(rangingCapabilities);
             }
         });
+    }
+
+    public interface Listener {
+        void onRangingCapabilities(RangingCapabilities rangingCapabilities);
+
+        void onRangingStarted(String address, UwbPhoneConfigData uwbPhoneConfigData);
+
+        void onRangingResult(String address, RangingResult rangingResult);
+
+        void onRangingError(Throwable error);
+
+        void onRangingComplete();
     }
 }
